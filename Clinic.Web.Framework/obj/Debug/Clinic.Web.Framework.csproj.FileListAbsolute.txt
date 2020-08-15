@@ -1,0 +1,96 @@
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Web.Framework.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Web.Framework.pdb
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\AutoMapper.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Core.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Data.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Service.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Elmah.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\ElmahEFLogger.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\EntityFramework.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.Owin.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.Owin.Security.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.Owin.Security.Google.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Newtonsoft.Json.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Owin.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\PersianDateTime.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\RazorGenerator.Mvc.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\StructureMap.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\StructureMap.Web.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\System.Data.Common.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\System.Web.Mvc.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\System.Web.Optimization.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\System.Web.WebPages.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\T4MVCExtensions.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\WebActivatorEx.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\System.Linq.Dynamic.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\EntityFramework.SqlServer.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\RefactorThis.GraphDiff.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\EFSecondLevelCache.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\System.Web.Helpers.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\System.Web.Razor.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Core.pdb
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Data.pdb
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Service.pdb
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\obj\Debug\Clinic.Web.Framework.csprojResolveAssemblyReference.cache
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\obj\Debug\Clinic.Web.Framework.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\obj\Debug\Clinic.Web.Framework.pdb
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Stimulsoft.Report.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Web.Framework\bin\Debug\Stimulsoft.Base.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Web.Framework.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Web.Framework.pdb
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\AutoMapper.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Core.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Data.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Service.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Elmah.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\ElmahEFLogger.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\EntityFramework.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.Owin.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.Owin.Security.Google.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Owin.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\PersianDateTime.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\RazorGenerator.Mvc.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\StructureMap.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\StructureMap.Web.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\System.Data.Common.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\System.Web.Mvc.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\System.Web.Optimization.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\System.Web.WebPages.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\T4MVCExtensions.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\WebActivatorEx.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\System.Linq.Dynamic.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\System.Web.Helpers.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Stimulsoft.Report.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\System.Web.Razor.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Stimulsoft.Base.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Core.pdb
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Data.pdb
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Clinic.Service.pdb
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\obj\Debug\Clinic.Web.Framework.csprojResolveAssemblyReference.cache
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\obj\Debug\Clinic.Web.Framework.csproj.CoreCompileInputs.cache
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\obj\Debug\Clinic.Web.Framework.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\obj\Debug\Clinic.Web.Framework.pdb
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\System.Data.SQLite.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\NReco.VideoInfo.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\NReco.VideoConverter.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\ImageProcessor.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Web.Framework\bin\Debug\Z.ExtensionMethods.dll

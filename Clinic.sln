@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic.Core", "Clinic.Core\Clinic.Core.csproj", "{3DBD6AF8-BA41-47C6-B01C-D48A9154171B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic.Data", "Clinic.Data\Clinic.Data.csproj", "{5F524635-CAEE-4FE1-8020-011AF2E7D698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic.Service", "Clinic.Service\Clinic.Service.csproj", "{DDACF646-5E51-482F-9E65-307D78EC7B1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic.Web", "Clinic.Web\Clinic.Web.csproj", "{A84D90A7-7989-49F8-9EBE-6B4B8792F3C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic.Web.Framework", "Clinic.Web.Framework\Clinic.Web.Framework.csproj", "{32EB0FD7-FF89-4EF8-A507-40C8DA9FA553}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{4CFD7390-CEDA-4FDD-94C0-8D195243DB24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{319EC250-625B-424E-82D3-3B233FA5DCA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DBD6AF8-BA41-47C6-B01C-D48A9154171B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DBD6AF8-BA41-47C6-B01C-D48A9154171B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DBD6AF8-BA41-47C6-B01C-D48A9154171B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DBD6AF8-BA41-47C6-B01C-D48A9154171B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F524635-CAEE-4FE1-8020-011AF2E7D698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F524635-CAEE-4FE1-8020-011AF2E7D698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F524635-CAEE-4FE1-8020-011AF2E7D698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F524635-CAEE-4FE1-8020-011AF2E7D698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDACF646-5E51-482F-9E65-307D78EC7B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDACF646-5E51-482F-9E65-307D78EC7B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDACF646-5E51-482F-9E65-307D78EC7B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDACF646-5E51-482F-9E65-307D78EC7B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A84D90A7-7989-49F8-9EBE-6B4B8792F3C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A84D90A7-7989-49F8-9EBE-6B4B8792F3C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A84D90A7-7989-49F8-9EBE-6B4B8792F3C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A84D90A7-7989-49F8-9EBE-6B4B8792F3C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32EB0FD7-FF89-4EF8-A507-40C8DA9FA553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32EB0FD7-FF89-4EF8-A507-40C8DA9FA553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32EB0FD7-FF89-4EF8-A507-40C8DA9FA553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32EB0FD7-FF89-4EF8-A507-40C8DA9FA553}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3DBD6AF8-BA41-47C6-B01C-D48A9154171B} = {4CFD7390-CEDA-4FDD-94C0-8D195243DB24}
+		{5F524635-CAEE-4FE1-8020-011AF2E7D698} = {4CFD7390-CEDA-4FDD-94C0-8D195243DB24}
+		{DDACF646-5E51-482F-9E65-307D78EC7B1C} = {4CFD7390-CEDA-4FDD-94C0-8D195243DB24}
+		{A84D90A7-7989-49F8-9EBE-6B4B8792F3C2} = {319EC250-625B-424E-82D3-3B233FA5DCA8}
+		{32EB0FD7-FF89-4EF8-A507-40C8DA9FA553} = {319EC250-625B-424E-82D3-3B233FA5DCA8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0709378-E9A5-441D-AB1E-60D50C90FAF3}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://rezaeipour.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Clinic.Core\\Clinic.Core.csproj
+		SccProjectTopLevelParentUniqueName1 = Clinic.sln
+		SccProjectName1 = Clinic.Core
+		SccLocalPath1 = Clinic.Core
+		SccProjectUniqueName2 = Clinic.Data\\Clinic.Data.csproj
+		SccProjectTopLevelParentUniqueName2 = Clinic.sln
+		SccProjectName2 = Clinic.Data
+		SccLocalPath2 = Clinic.Data
+		SccProjectUniqueName3 = Clinic.Service\\Clinic.Service.csproj
+		SccProjectTopLevelParentUniqueName3 = Clinic.sln
+		SccProjectName3 = Clinic.Service
+		SccLocalPath3 = Clinic.Service
+		SccProjectUniqueName4 = Clinic.Web\\Clinic.Web.csproj
+		SccProjectTopLevelParentUniqueName4 = Clinic.sln
+		SccProjectName4 = Clinic.Web
+		SccLocalPath4 = Clinic.Web
+		SccProjectUniqueName5 = Clinic.Web.Framework\\Clinic.Web.Framework.csproj
+		SccProjectTopLevelParentUniqueName5 = Clinic.sln
+		SccProjectName5 = Clinic.Web.Framework
+		SccLocalPath5 = Clinic.Web.Framework
+	EndGlobalSection
+EndGlobal

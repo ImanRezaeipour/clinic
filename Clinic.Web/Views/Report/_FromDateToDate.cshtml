@@ -1,0 +1,50 @@
+﻿@model Clinic.Core.Models.Report.ReportParameterViewModel
+@{
+    Layout = null;
+    ViewBag.Title = "افزودن گزارش";
+    ViewBag.Section = "Report";
+    ViewBag.Name = "ReportCreate";
+}
+<form id="newReport" action="@Url.Action(MVC.Report.Detail(Model.Id))" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+    <input type="hidden" id="Id" name="Id" value="@Model.Id"/>
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+            <div class="uk-form-row">
+                <div class="uk-grid" data-uk-grid-margin>
+
+                    <div class="uk-width-medium-1-3">
+                        <span>انتخاب دکتر</span>
+                        <select name="DoctorId" id="DoctorId" data-on-load="prepareDoctorCombobox">
+
+                        </select>
+                    </div>
+                    
+                    <div class="uk-width-medium-1-3">
+                        <span>انتخاب معرف</span>
+                        
+                        <select name="PresenterId" id="PresenterId" data-on-load="preparePresenterCombobox">
+                        </select>
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <label>از تاریخ</label>
+                        <input type="text" id="FromDate" name="FromDate" data-on-click="showDatePicker" class="md-input"/>
+                    </div>
+                    
+                    <div class="uk-width-medium-1-3">
+                        <label>تا تاریخ</label>
+                        <input type="text" id="ToDate" name="ToDate"  data-on-click="showDatePicker" class="md-input"/>
+                    </div>
+                    
+                </div>
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-6">
+                        <button type="submit" form="newReport" class="md-btn md-btn-primary md-btn-wave-light waves-effect waves-button waves-light">ذخیره</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,161 @@
+﻿<aside id="sidebar_main">
+    <div class="sidebar_main_header">
+        <div class="sidebar_logo">
+            <a href="index.html" class="sSidebar_hide sidebar_logo_large">
+                <img class="logo_regular" src="~/Bundles/Vendors/altair/assets/img/logo_main.png" alt="" height="15" width="71" />
+                <img class="logo_light" src="~/Bundles/Vendors/altair/assets/img/logo_main_white.png" alt="" height="15" width="71" />
+            </a>
+            <a href="index.html" class="sSidebar_show sidebar_logo_small">
+                <img class="logo_regular" src="~/Bundles/Vendors/altair/assets/img/logo_main_small.png" alt="" height="32" width="32" />
+                <img class="logo_light" src="~/Bundles/Vendors/altair/assets/img/logo_main_small_light.png" alt="" height="32" width="32" />
+            </a>
+        </div>
+    </div>
+    <div class="menu_section">
+        <ul>
+            <li @if (ViewBag.Section == "Dashboard") {<text>class="act_section"</text>}>
+                <a href="@Url.Action(MVC.Home.Dashboard())">
+                <span class="menu_icon">
+                    <i class="material-icons">dashboard</i>
+                </span>
+                    <span class="menu_title">داشبورد</span>
+                </a>
+            </li>
+            <li @if (ViewBag.Section == "Patient") {<text>class="act_section"</text>}>
+                <a href="#">
+                    <span class="menu_icon">
+                        <i class="material-icons">library_add</i>
+                    </span>
+                    <span class="menu_title">تعاریف پایه</span>
+                </a>
+                <ul>
+                    <li @if (ViewBag.Name == "PatientList" || ViewBag.Name == "PatientNew" || ViewBag.Name == "PatientEdit") {<text>class="act_item"</text>}>
+                        <a href="@Url.Action(MVC.Patient.List())">معرفی بیمار</a>
+                    </li>
+                    <li @if (ViewBag.Name == "DoctorList" || ViewBag.Name == "DoctorNew" || ViewBag.Name == "DoctorEdit") { <text> class="act_item" </text> }>
+                        <a href="@Url.Action(MVC.Doctor.List())">معرفی پزشک</a>
+                    </li>
+                    <li @if (ViewBag.Name == "PresenterList" || ViewBag.Name == "PresenterNew" || ViewBag.Name == "PresenterEdit") { <text> class="act_item" </text> }>
+
+                        <a href="@Url.Action(MVC.Presenter.List())">معرفی بازاریاب</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="menu_icon">
+                        <i class="material-icons">work</i>
+                    </span>
+                    <span class="menu_title">مدیریت محصولات</span>
+                </a>
+                <ul>
+                    <li @if (ViewBag.Name == "ProductList" || ViewBag.Name == "ProductNew" || ViewBag.Name == "ProductEdit") { <text> class="act_item" </text> }>
+
+                        <a href="@Url.Action(MVC.Product.List())">لیست محصولات</a>
+                    </li>
+                    <li @if (ViewBag.Name == "ProductSellerList" || ViewBag.Name == "ProductSellerNew" || ViewBag.Name == "ProductSellerEdit") { <text> class="act_item" </text> }>
+
+                        <a href="@Url.Action(MVC.ProductSeller.List())">لیست فروشندگان</a>
+                    </li>
+                    <li @if (ViewBag.Name == "ProductBuyList" || ViewBag.Name == "ProductBuyNew" || ViewBag.Name == "ProductBuyEdit") { <text> class="act_item" </text>  }>
+
+                        <a href="@Url.Action(MVC.ProductBuy.List())">لیست خریدها</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="menu_icon">
+                        <i class="material-icons">archive</i>
+                    </span>
+                    <span class="menu_title">مدیریت پرونده ها</span>
+                </a>
+                <ul>
+                    <li @if (ViewBag.Name == "DocumentList" || ViewBag.Name == "DocumentCreate" || ViewBag.Name == "DocumentEdit") { <text> class="act_item" </text> }>
+                        <a href="@Url.Action(MVC.Document.List())">لیست پرونده ها</a>
+                    </li>
+                    <li>
+                        <a href="#">لیست عکس ها</a>
+                    </li>
+                    <li>
+                        <a href="#">لیست فاکتور فروش</a>
+                    </li>
+                    <li>
+                        <a href="#">لیست فروش ها</a>
+                    </li>
+                    <li>
+                        <a href="#">لیست مرجوعی ها</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="menu_icon">
+                        <i class="material-icons">description</i>
+                    </span>
+                    <span class="menu_title">مدیریت اسناد</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">لیست سند ها</a>
+                    </li>
+                    <li>
+                        <a href="#">لیست فایل ها</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="menu_icon">
+                        <i class="material-icons">assignment</i>
+                    </span>
+                    <span class="menu_title">مدیریت گزارشات</span>
+                </a>
+                <ul>
+                    <li  @if (ViewBag.Name == "ReportList" || ViewBag.Name == "ReportCreate" || ViewBag.Name == "ReportEdit") { <text> class="act_item" </text> }>
+                        
+                        <a href="@Url.Action(MVC.Report.List())">لیست گزارشات</a>
+                    </li>
+                    <li>
+                        <a href="#">گزارش نموداری فروش</a>
+                    </li>
+                    <li>
+                        <a href="#">گزارش آمار بازدید</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="menu_icon">
+                        <i class="material-icons">email</i>
+                    </span>
+                    <span class="menu_title">اطلاع رسانی</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">لیست ایمیل های ارسالی</a>
+                    </li>
+                    <li>
+                        <a href="#">لیست پیامک های ارسالی</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="menu_icon">
+                        <i class="material-icons">settings</i>
+                    </span>
+                    <span class="menu_title">تنظیمات</span>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">سایت</a>
+                    </li>
+                    <li>
+                        <a href="#">لیست خطاها</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</aside>

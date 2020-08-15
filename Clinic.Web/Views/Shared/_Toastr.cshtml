@@ -1,0 +1,11 @@
+﻿@*
+    Razor and HTML work well together but squeezing in JavaScript isn’t always easy. In the code above, lines beginning with @: are JavaScript code added within the Razor section.
+*@
+@*@using Arezoo.Web.Views.Shared*@
+@using Arezoo.Web.Views.Shared
+@using Clinic.FrameWork.Toast
+@if (TempData.ContainsKey("Toastr"))
+{
+    Toastr toastr = TempData["Toastr"] as Toastr;
+    @ToastrBuilder.ShowToastMessages(toastr);
+}

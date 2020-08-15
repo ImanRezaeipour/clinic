@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+}
+<div id="newDocumentSaleProduct">
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+            <div class="uk-form-row">
+                <div class="uk-grid" data-uk-grid-margin>
+                    <input type="hidden" id="FactorProduct_Id" value=""/>
+
+                    <div class="uk-width-medium-1-3">
+                        <label>محصول</label>
+                        <select id="FactorProduct_ProductId" name="FactorProduct_ProductId" data-on-load="prepareDocumentFactorProductCombobox"></select>
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <label>قیمت</label>
+                        <input type="text" id="FactorProduct_Price" name="FactorProduct_Price" class="md-input" disabled="disabled" />
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <label>تعداد</label>
+                        <input type="text" id="FactorProduct_Count" name="FactorProduct_Count" data-on-load="simpleNumeric"/>
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <label>مجموع قیمت</label>
+                        <input type="text" id="FactorProduct_TotalPrice" name="FactorProduct_TotalPrice" class="md-input" disabled="disabled"/>
+                    </div>
+                    
+                    <div class="uk-width-medium-1-3">
+                        <label>توضیحات</label>
+                        <input type="text" id="FactorProduct_Description" name="FactorProduct_Description" class="md-input" />
+                    </div>
+                    
+                    <div class="uk-width-medium-1-3">
+                        <label>برگشتی</label>
+                        <input type="checkbox"  id="FactorProduct_IsReturn" name="FactorProduct_IsReturn" class="md-input" />
+                    </div>
+
+                </div>
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-6">
+                        <button type="button" data-on-click="documentSaleProductCreateSave" class="md-btn md-btn-primary waves-effect waves-button waves-light">ذخیره</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

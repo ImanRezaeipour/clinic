@@ -1,0 +1,66 @@
+﻿@model Clinic.Core.Models.Product.ProductEditViewModel
+@{
+    Layout = MVC.Shared.Views.MasterTemplates._Layout;
+    ViewBag.Title = "ویرایش اطلاعات محصول";
+    ViewBag.Section = "Product";
+    ViewBag.Name = "ProductList";
+}
+<form id="editProduct" action="@Url.Action(MVC.Product.Edit())" method="post">
+    <input type="hidden" id="Id" name="Id" value="@Model.Id" />
+    <input type="hidden" id="ParentId" name="ParentId" value="@Model.ParentId" />
+
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+            <div class="uk-form-row">
+                <div class="uk-grid" data-uk-grid-margin>
+
+                    <div class="uk-width-medium-1-3">
+                        <label>محصول</label>
+                        <div class="k-rtl"><div id="treeProductContainer"></div></div>
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>عنوان</label>
+                        <input type="text" id="Title" name="Title" value="@Model.Title" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>تعداد</label>
+                        <input type="text" id="AvailableCount" name="AvailableCount" value="@Model.AvailableCount" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>قیمت</label>
+                        <input type="text" id="UnitPrice" name="UnitPrice" value="@Model.UnitPrice" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>بارکد</label>
+                        <input type="text" id="BarCode" name="BarCode" value="@Model.BarCode" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>حداقل تعداد جهت آلارم</label>
+                        <input type="text" id="AlarmCount" name="AlarmCount" value="@Model.AlarmCount" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>توضیحات</label>
+                        <input type="text" id="Description" name="Description" value="@Model.Description" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>محصول است؟</label>
+                        <input type="checkbox" id="IsProduct" name="IsProduct" value="true" checked="@Model.IsProduct" class="md-input" />
+                        <input type="hidden" name="IsProduct" value="false" />
+
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>فعال است؟</label>
+                        <input type="checkbox" id="IsActive" name="IsActive"   value="true" checked="@Model.IsActive" class="md-input" />
+                        <input type="hidden" name="IsActive" value="false" />
+                    </div>
+
+                </div>
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-6">
+                        <button type="submit" form="editProduct" class="md-btn md-btn-primary md-btn-wave-light waves-effect waves-button waves-light">ذخیره</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

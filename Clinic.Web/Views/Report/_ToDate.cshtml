@@ -1,0 +1,46 @@
+﻿@model Clinic.Core.Models.Report.ReportCreateViewModel
+@{
+    Layout = MVC.Shared.Views.MasterTemplates._Layout;
+    ViewBag.Title = "افزودن گزارش";
+    ViewBag.Section = "Report";
+    ViewBag.Name = "ReportCreate";
+}
+<form id="newReport" action="@Url.Action(MVC.Report.Create())" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+            <div class="uk-form-row">
+                <div class="uk-grid" data-uk-grid-margin>
+
+                    <div class="uk-width-medium-1-3">
+                        <label>نام گزارش</label>
+                        <input type="text" id="Name" name="Name" class="md-input" />
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <label>عنوان گزارش</label>
+                        <input type="text" id="Title" name="Title" class="md-input"/>
+                    </div>
+                    
+                    <div class="uk-width-medium-1-3">
+                        <label>توضیحات</label>
+                        <input type="text" id="Description" name="Description" class="md-input"/>
+                    </div>
+                    
+                    <div class="uk-width-medium-1-3">
+                        <label>فایل گزارش</label>
+                        <input type="file" id="contentFile" name="contentFile" class="md-input"/>
+                    </div>
+
+                </div>
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-6">
+                        <button type="submit" form="newReport" class="md-btn md-btn-primary md-btn-wave-light waves-effect waves-button waves-light">ذخیره</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

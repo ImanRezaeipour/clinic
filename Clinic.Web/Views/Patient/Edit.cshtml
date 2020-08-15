@@ -1,0 +1,63 @@
+﻿@model Clinic.Core.Models.Patient.PatientEditViewModel
+@{
+    Layout = MVC.Shared.Views.MasterTemplates._Layout;
+    ViewBag.Title = "ویرایش اطلاعات بیمار";
+    ViewBag.Section = "Patient";
+    ViewBag.Name = "PatientEdit";
+}
+<form id="editPatient" action="@Url.Action(MVC.Patient.Edit())" method="post">
+    <input type="hidden" id="Id" name="Id" value="@Model.Id" />
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+            <div class="uk-form-row">
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-3">
+                        <label>نام</label>
+                        <input type="text" id="FirstName" name="FirstName" value="@Model.FirstName" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>نام خانوادگی</label>
+                        <input type="text" id="LastName" name="LastName" value="@Model.LastName" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>نام پدر</label>
+                        <input type="text" id="FatherName" name="FatherName" value="@Model.FatherName" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>شماره شناسنامه</label>
+                        <input type="text" id="CertificateCode" name="CertificateCode" value="@Model.CertificateCode" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>کد ملی</label>
+                        <input type="text" id="NationalCode" name="NationalCode" value="@Model.NationalCode" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>تاریخ تولد</label>
+                        <input type="text" id="BirthDayOn" name="BirthDayOn" value="@Model.BirthDayOn" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>محل تولد</label>
+                        <input type="text" id="BirthDayPlace" name="BirthDayPlace" value="@Model.BirthDayPlace" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>شماره موبایل</label>
+                        <input type="text" id="MobileNumber" name="MobileNumber" value="@Model.MobileNumber" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>شماره تلفن</label>
+                        <input type="text" id="PhoneNumber" name="PhoneNumber" value="@Model.PhoneNumber" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>توضیحات</label>
+                        <textarea id="Description" name="Description" class="md-input">@Model.Description</textarea>
+                    </div>
+                </div>
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-6">
+                        <button type="submit" form="editPatient" class="md-btn md-btn-primary md-btn-wave-light waves-effect waves-button waves-light">ویرایش</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

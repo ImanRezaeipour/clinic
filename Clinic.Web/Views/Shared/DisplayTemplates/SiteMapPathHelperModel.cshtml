@@ -1,0 +1,14 @@
+﻿@model MvcSiteMapProvider.Web.Html.Models.SiteMapPathHelperModel
+<ul id="breadcrumbs">
+    @foreach (var node in Model)
+    {
+        if (node == Model.Last())
+        {
+            <li><span>@node.Title</span></li>
+        }
+        else
+        {
+            <li><a href="@node.Url">@node.Title</a></li>
+        }
+    }
+</ul>

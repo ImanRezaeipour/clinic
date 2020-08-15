@@ -1,0 +1,28 @@
+﻿@model Clinic.Core.Models.Report.ReportParameterViewModel
+@{
+    Layout = MVC.Shared.Views.MasterTemplates._Layout;
+    ViewBag.Title = "افزودن گزارش";
+    ViewBag.Section = "Report";
+    ViewBag.Name = "ReportCreate";
+}
+<form id="newReport" action="@Url.Action(MVC.Report.Detail(Model.Id))" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+            <div class="uk-form-row">
+                <div class="uk-grid" data-uk-grid-margin>
+
+
+                </div>
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-6">
+                        <button type="submit" form="newReport" class="md-btn md-btn-primary md-btn-wave-light waves-effect waves-button waves-light">ذخیره</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

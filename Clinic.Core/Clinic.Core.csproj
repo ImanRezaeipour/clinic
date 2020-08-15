@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DBD6AF8-BA41-47C6-B01C-D48A9154171B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Clinic.Core</RootNamespace>
+    <AssemblyName>Clinic.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\DependentDLL\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\DependentDLL\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\DependentDLL\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\DependentDLL\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\DependentDLL\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\DependentDLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap, Version=4.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap.DynamicInterception, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\StructureMap.DynamicInterception.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\StructureMap.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>..\DependentDLL\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\DependentDLL\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\ConfigurationManager.cs" />
+    <Compile Include="Configuration\IConfigurationManager.cs" />
+    <Compile Include="Constants\AjaxErrorStatus.cs" />
+    <Compile Include="Constants\CacheProfileNameConst.cs" />
+    <Compile Include="Constants\CacheSetting.cs" />
+    <Compile Include="Constants\ConfigConst.cs" />
+    <Compile Include="Constants\ContentTypeConst.cs" />
+    <Compile Include="Constants\MimeTypes.cs" />
+    <Compile Include="DataAnnotations\IsTrueAttribute.cs" />
+    <Compile Include="Domains\ActivityLog.cs" />
+    <Compile Include="Domains\Addresses\Address.cs" />
+    <Compile Include="Domains\AuditLog.cs" />
+    <Compile Include="Domains\Common\BaseEntity.cs" />
+    <Compile Include="Domains\Common\BaseMessage.cs" />
+    <Compile Include="Domains\Common\BasePerson.cs" />
+    <Compile Include="Domains\Common\Entity.cs" />
+    <Compile Include="Domains\Doctors\Doctor.cs" />
+    <Compile Include="Domains\Doctors\Expertise.cs" />
+    <Compile Include="Domains\Documents\Document.cs" />
+    <Compile Include="Domains\Documents\DocumentImage.cs" />
+    <Compile Include="Domains\Permissions\Permission.cs" />
+    <Compile Include="Domains\Roles\Role.cs" />
+    <Compile Include="Domains\Roles\RolePermission.cs" />
+    <Compile Include="Domains\Sales\Sale.cs" />
+    <Compile Include="Domains\Sales\SalePayment.cs" />
+    <Compile Include="Domains\Sales\SaleProduct.cs" />
+    <Compile Include="Domains\Emails\Email.cs" />
+    <Compile Include="Domains\Patients\Patient.cs" />
+    <Compile Include="Domains\Presenters\Presenter.cs" />
+    <Compile Include="Domains\Products\Product.cs" />
+    <Compile Include="Domains\Products\ProductBuy.cs" />
+    <Compile Include="Domains\Products\ProductSeller.cs" />
+    <Compile Include="Domains\Reports\Report.cs" />
+    <Compile Include="Domains\Reports\ReportParameter.cs" />
+    <Compile Include="Domains\Smses\Sms.cs" />
+    <Compile Include="Domains\Statistics\Statistic.cs" />
+    <Compile Include="Domains\Users\User.cs" />
+    <Compile Include="Domains\Users\UserClaim.cs" />
+    <Compile Include="Domains\Users\UserLogin.cs" />
+    <Compile Include="Domains\Users\UserRole.cs" />
+    <Compile Include="Events\EntityDeleted.cs" />
+    <Compile Include="Events\EntityInserted.cs" />
+    <Compile Include="Events\EntityUpdated.cs" />
+    <Compile Include="Exceptions\FactoryException.cs" />
+    <Compile Include="Exceptions\JsonValidationException.cs" />
+    <Compile Include="Exceptions\SeoException.cs" />
+    <Compile Include="Exceptions\ServiceException.cs" />
+    <Compile Include="Exceptions\ValidationException.cs" />
+    <Compile Include="Extensions\CaptchaHelper.cs" />
+    <Compile Include="Extensions\CastExtensions.cs" />
+    <Compile Include="Extensions\CloneableExtensions.cs" />
+    <Compile Include="Extensions\ConvertExtention.cs" />
+    <Compile Include="Extensions\GenericExtensions.cs" />
+    <Compile Include="Extensions\HttpExtentions.cs" />
+    <Compile Include="Extensions\XmlExtensions.cs" />
+    <Compile Include="Helpers\CaptchaHelper.cs" />
+    <Compile Include="Helpers\EnumHelper.cs" />
+    <Compile Include="Helpers\FileHelper.cs" />
+    <Compile Include="Helpers\LazySingletonHelper.cs" />
+    <Compile Include="Extensions\NumberExtension.cs" />
+    <Compile Include="Extensions\PersianUtils\DateTimeOffsetPart.cs" />
+    <Compile Include="Extensions\PersianUtils\DateTimeUtils.cs" />
+    <Compile Include="Extensions\PersianUtils\EquinoxCalculator.cs" />
+    <Compile Include="Extensions\PersianUtils\FriendlyPerisanDateUtils.cs" />
+    <Compile Include="Extensions\PersianUtils\HumanReadableInteger.cs" />
+    <Compile Include="Extensions\PersianUtils\IranCities\City.cs" />
+    <Compile Include="Extensions\PersianUtils\IranCities\County.cs" />
+    <Compile Include="Extensions\PersianUtils\IranCities\District.cs" />
+    <Compile Include="Extensions\PersianUtils\IranCities\Iran.cs" />
+    <Compile Include="Extensions\PersianUtils\IranCities\Province.cs" />
+    <Compile Include="Extensions\PersianUtils\IranCodesUtils.cs" />
+    <Compile Include="Extensions\PersianUtils\IranShebaUtils.cs" />
+    <Compile Include="Extensions\PersianUtils\IranShetabUtils.cs" />
+    <Compile Include="Extensions\PersianUtils\NationalCodeUtils.cs" />
+    <Compile Include="Extensions\PersianUtils\Normalizer\AggressiveEditing.cs" />
+    <Compile Include="Extensions\PersianUtils\Normalizer\FixDash.cs" />
+    <Compile Include="Extensions\PersianUtils\Normalizer\FixDiacritics.cs" />
+    <Compile Include="Extensions\PersianUtils\Normalizer\FixDots.cs" />
+    <Compile Include="Extensions\PersianUtils\Normalizer\FixEnglishQuotes.cs" />
+    <Compile Include="Extensions\PersianUtils\Normalizer\FixZwnj.cs" />
+    <Compile Include="Extensions\PersianUtils\PersianCulture.cs" />
+    <Compile Include="Extensions\PersianUtils\PersianDateTimeUtils.cs" />
+    <Compile Include="Extensions\PersianUtils\PersianNormalizers.cs" />
+    <Compile Include="Extensions\PersianUtils\PersianNormalizerUtils.cs" />
+    <Compile Include="Extensions\PersianUtils\PersianNumbersUtils.cs" />
+    <Compile Include="Extensions\PersianUtils\PersianStopwords.cs" />
+    <Compile Include="Extensions\PersianUtils\RegexUtils.cs" />
+    <Compile Include="Extensions\PersianUtils\TimeConstants.cs" />
+    <Compile Include="Extensions\PersianUtils\UnicodeConstants.cs" />
+    <Compile Include="Extensions\PersianUtils\YeKe.cs" />
+    <Compile Include="Extensions\PagingExtensions.cs" />
+    <Compile Include="Extensions\RegexExtensions.cs" />
+    <Compile Include="Extensions\StringExtension.cs" />
+    <Compile Include="Extensions\TypeExtention.cs" />
+    <Compile Include="Helpers\QueryHelper.cs" />
+    <Compile Include="Helpers\RandomNumberHelper.cs" />
+    <Compile Include="Helpers\RandomTextHelper.cs" />
+    <Compile Include="Helpers\ReadingHelper.cs" />
+    <Compile Include="Helpers\SequentialGuidHelper.cs" />
+    <Compile Include="Helpers\SequentialGuidType.cs" />
+    <Compile Include="Infrastructure\DependencyManagement\ContainerManager.cs" />
+    <Compile Include="Models\Account\LoginViewModel.cs" />
+    <Compile Include="Models\ActivityLog\ActivityLogEditViewModel.cs" />
+    <Compile Include="Models\ActivityLog\ActivityLogCreateViewModel.cs" />
+    <Compile Include="Models\ActivityLog\ActivityLogViewModel.cs" />
+    <Compile Include="Models\Address\AddressEditViewModel.cs" />
+    <Compile Include="Models\Address\AddressCreateViewModel.cs" />
+    <Compile Include="Models\Address\AddressViewModel.cs" />
+    <Compile Include="Models\AuditLog\AuditLogEditViewModel.cs" />
+    <Compile Include="Models\AuditLog\AuditLogCreateViewModel.cs" />
+    <Compile Include="Models\AuditLog\AuditLogViewModel.cs" />
+    <Compile Include="Models\Common\BaseSearchRequest.cs" />
+    <Compile Include="Models\Common\BaseViewModel.cs" />
+    <Compile Include="Models\Common\PageSize.cs" />
+    <Compile Include="Models\Common\SearchRequest.cs" />
+    <Compile Include="Models\Common\SelectListItem.cs" />
+    <Compile Include="Models\Common\SortDirection.cs" />
+    <Compile Include="Models\Common\SortMember.cs" />
+    <Compile Include="Models\Common\ViewModel.cs" />
+    <Compile Include="Models\Doctor\DoctorEditViewModel.cs" />
+    <Compile Include="Models\Doctor\DoctorCreateViewModel.cs" />
+    <Compile Include="Models\Doctor\DoctorViewModel.cs" />
+    <Compile Include="Models\DocumentImage\DocumentImageEditViewModel.cs" />
+    <Compile Include="Models\DocumentImage\DocumentImageCreateViewModel.cs" />
+    <Compile Include="Models\DocumentImage\DocumentImageViewModel.cs" />
+    <Compile Include="Models\DocumentSaleProduct\DocumentSaleProductEditViewModel.cs" />
+    <Compile Include="Models\DocumentSaleProduct\DocumentSaleProductCreateViewModel.cs" />
+    <Compile Include="Models\DocumentSaleProduct\DocumentSaleProductViewModel.cs" />
+    <Compile Include="Models\DocumentSale\DocumentSaleEditViewModel.cs" />
+    <Compile Include="Models\DocumentSale\DocumentSaleCreateViewModel.cs" />
+    <Compile Include="Models\DocumentSale\DocumentSaleViewModel.cs" />
+    <Compile Include="Models\Document\DocumentEditViewModel.cs" />
+    <Compile Include="Models\Document\DocumentCreateViewModel.cs" />
+    <Compile Include="Models\Document\DocumentViewModel.cs" />
+    <Compile Include="Models\Email\EmailEditViewModel.cs" />
+    <Compile Include="Models\Email\EmailCreateViewModel.cs" />
+    <Compile Include="Models\Email\EmailViewModel.cs" />
+    <Compile Include="Models\Expertise\ExpertiseEditViewModel.cs" />
+    <Compile Include="Models\Expertise\ExpertiseCreateViewModel.cs" />
+    <Compile Include="Models\Expertise\ExpertiseViewModel.cs" />
+    <Compile Include="Models\Home\DashBoardViewModel.cs" />
+    <Compile Include="Models\Home\LandingPageViewModel.cs" />
+    <Compile Include="Models\Home\ProfileViewModel.cs" />
+    <Compile Include="Models\Patient\PatientEditViewModel.cs" />
+    <Compile Include="Models\Patient\PatientCreateViewModel.cs" />
+    <Compile Include="Models\Patient\PatientViewModel.cs" />
+    <Compile Include="Models\Permission\PermissionCreateViewModel.cs" />
+    <Compile Include="Models\Permission\PermissionEditViewModel.cs" />
+    <Compile Include="Models\Permission\PermissionListViewModel.cs" />
+    <Compile Include="Models\Permission\PermissionSearchRequest.cs" />
+    <Compile Include="Models\Permission\PermissionViewModel.cs" />
+    <Compile Include="Models\Presenter\PresenterEditViewModel.cs" />
+    <Compile Include="Models\Presenter\PresenterCreateViewModel.cs" />
+    <Compile Include="Models\Presenter\PresenterViewModel.cs" />
+    <Compile Include="Models\ProductBuy\ProductBuyEditViewModel.cs" />
+    <Compile Include="Models\ProductBuy\ProductBuyCreateViewModel.cs" />
+    <Compile Include="Models\ProductBuy\ProductBuyViewModel.cs" />
+    <Compile Include="Models\ProductSeller\ProductSellerEditViewModel.cs" />
+    <Compile Include="Models\ProductSeller\ProductSellerCreateViewModel.cs" />
+    <Compile Include="Models\ProductSeller\ProductSellerViewModel.cs" />
+    <Compile Include="Models\Product\ProductEditViewModel.cs" />
+    <Compile Include="Models\Product\ProductCreateViewModel.cs" />
+    <Compile Include="Models\Product\ProductViewModel.cs" />
+    <Compile Include="Models\Report\ReportParameterViewModel.cs" />
+    <Compile Include="Models\Report\ReportSearchRequest.cs" />
+    <Compile Include="Models\Report\ReportEditViewModel.cs" />
+    <Compile Include="Models\Report\ReportCreateViewModel.cs" />
+    <Compile Include="Models\Report\ReportViewModel.cs" />
+    <Compile Include="Models\Role\PermissionViewModel.cs" />
+    <Compile Include="Models\Role\RoleAggregateMember.cs" />
+    <Compile Include="Models\Role\RoleDetailViewModel.cs" />
+    <Compile Include="Models\Role\RoleEditViewModel.cs" />
+    <Compile Include="Models\Role\RoleCreateViewModel.cs" />
+    <Compile Include="Models\Role\RoleListViewModel.cs" />
+    <Compile Include="Models\Role\RoleSearchRequest.cs" />
+    <Compile Include="Models\Role\RoleViewModel.cs" />
+    <Compile Include="Models\Sms\SmsEditViewModel.cs" />
+    <Compile Include="Models\Sms\SmsCreateViewModel.cs" />
+    <Compile Include="Models\Sms\SmsViewModel.cs" />
+    <Compile Include="Models\Statistic\StatisticEditViewModel.cs" />
+    <Compile Include="Models\Statistic\StatisticCreateViewModel.cs" />
+    <Compile Include="Models\Statistic\StatisticViewModel.cs" />
+    <Compile Include="Models\User\UserChangePasswordViewModel.cs" />
+    <Compile Include="Models\User\UserEditViewModel.cs" />
+    <Compile Include="Models\User\UserCreateViewModel.cs" />
+    <Compile Include="Models\User\UserViewModel.cs" />
+    <Compile Include="Objects\FineUploaderObject.cs" />
+    <Compile Include="Objects\JsTreeObject.cs" />
+    <Compile Include="Objects\KendoFileObject.cs" />
+    <Compile Include="Objects\Select2Object.cs" />
+    <Compile Include="Profiles\AddressProfile.cs" />
+    <Compile Include="Profiles\DoctorProfile.cs" />
+    <Compile Include="Profiles\DocumentImageProfile.cs" />
+    <Compile Include="Profiles\DocumentProfile.cs" />
+    <Compile Include="Profiles\DocumentSaleProductProfile.cs" />
+    <Compile Include="Profiles\DocumentSaleProfile.cs" />
+    <Compile Include="Profiles\ExpertiseProfile.cs" />
+    <Compile Include="Profiles\PatientProfile.cs" />
+    <Compile Include="Profiles\PresenterProfile.cs" />
+    <Compile Include="Profiles\ProductBuyProfile.cs" />
+    <Compile Include="Profiles\ProductProfile.cs" />
+    <Compile Include="Profiles\ProductSellerProfile.cs" />
+    <Compile Include="Profiles\ReportProfile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TypeConverters\DateTimeTypeConverter.cs" />
+    <Compile Include="TypeConverters\NullableDateTimeTypeConverter.cs" />
+    <Compile Include="Types\AuditType.cs" />
+    <Compile Include="Types\GenderType.cs" />
+    <Compile Include="Types\ImageProcessType.cs" />
+    <Compile Include="Types\PaymentType.cs" />
+    <Compile Include="Types\StateType.cs" />
+    <Compile Include="Utilities\Http\HttpExtention.cs" />
+    <Compile Include="Utilities\Http\HttpRequestMessageExtension.cs" />
+    <Compile Include="Utilities\Kendo\KendoAggregate.cs" />
+    <Compile Include="Utilities\Kendo\KendoDataSourceRequest.cs" />
+    <Compile Include="Utilities\Kendo\KendoDataSourceResult.cs" />
+    <Compile Include="Utilities\Kendo\KendoFilter.cs" />
+    <Compile Include="Utilities\Kendo\KendoQueryableExtensions.cs" />
+    <Compile Include="Utilities\Kendo\KendoSort.cs" />
+    <Compile Include="Utilities\Paging\IPagedList.cs" />
+    <Compile Include="Utilities\Paging\PagedList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Libraries\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

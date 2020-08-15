@@ -1,0 +1,45 @@
+﻿
+
+body {
+    font-size: 14px;
+    font-family: 'IRANSans-web',Tahoma !important;
+}
+
+.k-header .k-link {
+    text-align: center;
+}
+.animated-content .panel {
+    visibility: visible;
+}
+
+        .tab-pane {
+    padding: 15px 15px;
+}
+
+div.k-treeview {
+            height: 200px;
+            overflow-y: auto;
+            border: 1px solid #d9d9d9;
+        }
+
+.page-content > .breadcrumb {
+  margin: 0 0 0 0;
+ }
+
+.panel .panel-heading .panel-ctrls {
+    margin: 0;
+    padding: 10px 0 10px;
+}
+
+
+.tree {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+}
+
+
+.stiMvcViewerReportPanel table{
+    direction:ltr !important;
+}

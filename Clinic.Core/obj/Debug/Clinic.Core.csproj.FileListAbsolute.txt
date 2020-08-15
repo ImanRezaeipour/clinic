@@ -1,0 +1,36 @@
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Core\bin\Debug\Clinic.Core.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Core\bin\Debug\Clinic.Core.pdb
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Core\bin\Debug\AutoMapper.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Core\bin\Debug\EntityFramework.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Core\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Core\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Core\bin\Debug\Newtonsoft.Json.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Core\bin\Debug\System.Linq.Dynamic.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Core\bin\Debug\Owin.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Core\obj\Debug\Clinic.Core.csprojResolveAssemblyReference.cache
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Core\obj\Debug\Clinic.Core.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Core\obj\Debug\Clinic.Core.pdb
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\Clinic.Core.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\Clinic.Core.pdb
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\AutoMapper.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\EntityFramework.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\System.Linq.Dynamic.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\Owin.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\obj\Debug\Clinic.Core.csprojResolveAssemblyReference.cache
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\obj\Debug\Clinic.Core.csproj.CoreCompileInputs.cache
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\obj\Debug\Clinic.Core.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\obj\Debug\Clinic.Core.pdb
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\StructureMap.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\StructureMap.DynamicInterception.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\StructureMap.Web.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\System.Web.Mvc.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\System.Web.Razor.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\System.Web.WebPages.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Core\bin\Debug\System.Web.WebPages.Deployment.dll

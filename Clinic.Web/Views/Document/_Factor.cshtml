@@ -1,0 +1,40 @@
+﻿@{
+    Layout = null;
+}
+<div id="newDocumentSale">
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+            <div class="uk-form-row">
+                <div class="uk-grid" data-uk-grid-margin>
+
+                    <div class="uk-width-medium-1-3">
+                        <label>توضیحات</label>
+                        <input type="text" id="SaleDescription" name="SaleDescription" class="md-input" data-val="true" data-val-required="شماره پرونده را وارد کنید" />
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <label>درصد تخفیف</label>
+                        <input type="text" id="DiscountPercent" name="DiscountPercent" class="md-input" data-val="true" data-val-required="لطفا وارد کنید" />
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <label>جمع دیگر</label>
+                        <input type="text" id="TotalOtherPrice" name="TotalOtherPrice" class="md-input" />
+                    </div>
+
+                    <div class="uk-width-medium-1-1">
+                        <label>لیست محصولات</label>
+                        <div id="DocumentSaleProductsGridContainer" data-on-load="prepareDocumentSaleProductListGrid"></div>
+                        <div id="saleDialog"></div>
+                    </div>
+
+                </div>
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-6">
+                        <button type="button" data-on-click="documentSaleListCreateSave" class="md-btn md-btn-primary waves-effect waves-button waves-light">ذخیره</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

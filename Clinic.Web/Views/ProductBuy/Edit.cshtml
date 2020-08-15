@@ -1,0 +1,45 @@
+﻿@model Clinic.Core.Models.ProductBuy.ProductBuyEditViewModel
+@{
+    Layout = MVC.Shared.Views.MasterTemplates._Layout;
+    ViewBag.Title = "ویرایش اطلاعات محصول فروشنده";
+    ViewBag.Section = "ProductBuy";
+    ViewBag.Name = "ProductBuyList";
+}
+<form id="editProductBuy" action="@Url.Action(MVC.ProductBuy.Edit())" method="post">
+    <input type="hidden" id="Id" name="Id" value="@Model.Id" />
+    <input type="hidden" id="ProductId" name="ProductId" value="@Model.ProductId" />
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+            <div class="uk-form-row">
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-3">
+                        <label>محصول</label>
+                        <div class="k-rtl"><div id="treeProductContainer"></div></div>
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>تعداد خریداری شده</label>
+                        <input type="text" id="BoughtCount" name="BoughtCount" value="@Model.BoughtCount" class="md-input" />
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <label>قیمت</label>
+                        <input type="text" id="UnitPrice" name="UnitPrice" value="@Model.UnitPrice" class="md-input" />
+                    </div>
+
+                    <select id="SellerId" name="SellerId" data-val="true" data-val-required="لطفا وارد کنید">
+                        <option value="" selected disabled>-- انتخاب کنید --</option>
+                        @foreach (var seller in Model.SellersList)
+                        {
+                            <option value="@seller.Value" @if (Model.SellerId.ToString() == seller.Value) { <text> selected="selected" </text> }>@seller.Text</option>
+                        }
+                    </select>
+
+                </div>
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-6">
+                        <button type="submit" form="editProductBuy" class="md-btn md-btn-primary md-btn-wave-light waves-effect waves-button waves-light">ذخیره</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

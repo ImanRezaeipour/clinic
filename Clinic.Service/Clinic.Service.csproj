@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DDACF646-5E51-482F-9E65-307D78EC7B1C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Clinic.Service</RootNamespace>
+    <AssemblyName>Clinic.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\DependentDLL\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\DependentDLL\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageProcessor">
+      <HintPath>..\DependentDLL\ImageProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\DependentDLL\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\DependentDLL\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\DependentDLL\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\DependentDLL\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\DependentDLL\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\DependentDLL\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\DependentDLL\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\DependentDLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NReco.VideoConverter">
+      <HintPath>..\DependentDLL\NReco.VideoConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="NReco.VideoInfo">
+      <HintPath>..\DependentDLL\NReco.VideoInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2016.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2016.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Mvc, Version=2016.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\Stimulsoft.Report.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Web, Version=2016.3.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\Stimulsoft.Report.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap, Version=4.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap.DynamicInterception">
+      <HintPath>..\DependentDLL\StructureMap.DynamicInterception.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap.Web">
+      <HintPath>..\DependentDLL\StructureMap.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>..\DependentDLL\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\DependentDLL\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\DependentDLL\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Z.ExtensionMethods">
+      <HintPath>..\DependentDLL\Z.ExtensionMethods.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Factories\Documents\DocumentFactory.cs" />
+    <Compile Include="Factories\Documents\DocumentSaleFactory.cs" />
+    <Compile Include="Factories\Documents\DocumentSaleProductFactory.cs" />
+    <Compile Include="Factories\Documents\IDocumentFactory.cs" />
+    <Compile Include="Factories\Documents\IDocumentSaleFactory.cs" />
+    <Compile Include="Factories\Documents\IDocumentSaleProductFactory.cs" />
+    <Compile Include="Factories\Expertises\ExpertiseFactory.cs" />
+    <Compile Include="Factories\Expertises\IExpertiseFactory.cs" />
+    <Compile Include="Factories\Persons\IPatientFactory.cs" />
+    <Compile Include="Factories\Persons\PatientFactory.cs" />
+    <Compile Include="Factories\Persons\DoctorFactory.cs" />
+    <Compile Include="Factories\Persons\IDoctorFactory.cs" />
+    <Compile Include="Factories\Persons\IPresenterFactory.cs" />
+    <Compile Include="Factories\Persons\PresenterFactory.cs" />
+    <Compile Include="Factories\Products\IProductBuyFactory.cs" />
+    <Compile Include="Factories\Products\IProductFactory.cs" />
+    <Compile Include="Factories\Products\IProductSellerFactory.cs" />
+    <Compile Include="Factories\Products\ProductBuyFactory.cs" />
+    <Compile Include="Factories\Products\ProductFactory.cs" />
+    <Compile Include="Factories\Products\ProductSellerFactory.cs" />
+    <Compile Include="Factories\Reports\IReportFactory.cs" />
+    <Compile Include="Factories\Reports\ReportFactory.cs" />
+    <Compile Include="Factories\Users\IRoleFactory.cs" />
+    <Compile Include="Factories\Users\RoleFactory.cs" />
+    <Compile Include="Managers\Attachments\AttachmentManager.cs" />
+    <Compile Include="Managers\Attachments\AttachmentType.cs" />
+    <Compile Include="Managers\Attachments\AttachmentValidator.cs" />
+    <Compile Include="Managers\Attachments\IAttachmentManager.cs" />
+    <Compile Include="Managers\Attachments\IAttachmentType.cs" />
+    <Compile Include="Managers\Attachments\IAttachmentValidator.cs" />
+    <Compile Include="Managers\Attachments\MimeTypeDetector.cs" />
+    <Compile Include="Managers\Attachments\MimeTypeManager.cs" />
+    <Compile Include="Managers\Events\EventPublisher.cs" />
+    <Compile Include="Managers\Events\EventPublisherExtensions.cs" />
+    <Compile Include="Managers\Events\IEventHandler.cs" />
+    <Compile Include="Managers\Events\IEventPublisher.cs" />
+    <Compile Include="Managers\Events\ISubscriptionService.cs" />
+    <Compile Include="Managers\Events\SubscriptionService.cs" />
+    <Compile Include="Managers\File\FileConst.cs" />
+    <Compile Include="Managers\File\FileManager.cs" />
+    <Compile Include="Managers\File\FileModel.cs" />
+    <Compile Include="Managers\File\FilePermissionHelper.cs" />
+    <Compile Include="Managers\File\FineUploaderModel.cs" />
+    <Compile Include="Managers\File\IFileManager.cs" />
+    <Compile Include="Managers\Image\DefaultImageGenerator.cs" />
+    <Compile Include="Managers\Image\IImageBuilder.cs" />
+    <Compile Include="Managers\Image\IImageValidator.cs" />
+    <Compile Include="Managers\Image\ImageBuilder.cs" />
+    <Compile Include="Managers\Image\ImageManager.cs" />
+    <Compile Include="Managers\Image\ImageValidator.cs" />
+    <Compile Include="Managers\Image\TextToImage.cs" />
+    <Compile Include="Managers\Video\Audio.cs" />
+    <Compile Include="Managers\Video\IVideoManager.cs" />
+    <Compile Include="Managers\Video\IVideoValidator.cs" />
+    <Compile Include="Managers\Video\Video.cs" />
+    <Compile Include="Managers\Video\VideoManager.cs" />
+    <Compile Include="Managers\Video\VideoMetaData.cs" />
+    <Compile Include="Managers\Video\VideoValidator.cs" />
+    <Compile Include="Managers\Video\VideoWatermarkPositionType.cs" />
+    <Compile Include="Managers\Video\VideoWatermarkType.cs" />
+    <Compile Include="Services\Caching\CacheExtension.cs" />
+    <Compile Include="Services\Common\CodeConst.cs" />
+    <Compile Include="Services\Common\CommonService.cs" />
+    <Compile Include="Services\Common\ICommonService.cs" />
+    <Compile Include="Services\Common\ServiceErrorConst.cs" />
+    <Compile Include="Services\Logs\IActivityLogService.cs" />
+    <Compile Include="Services\Locations\IAddressService.cs" />
+    <Compile Include="Services\Logs\IAuditLogService.cs" />
+    <Compile Include="Services\Permissions\IPermissionService.cs" />
+    <Compile Include="Services\Permissions\PermissionConst.cs" />
+    <Compile Include="Services\Permissions\PermissionService.cs" />
+    <Compile Include="Services\Persons\IDoctorService.cs" />
+    <Compile Include="Services\Documents\IDocumentImageService.cs" />
+    <Compile Include="Services\Documents\IDocumentSaleProductService.cs" />
+    <Compile Include="Services\Documents\IDocumentSaleService.cs" />
+    <Compile Include="Services\Documents\IDocumentService.cs" />
+    <Compile Include="Services\Messages\IEmailService.cs" />
+    <Compile Include="Services\Expertises\IExpertiseService.cs" />
+    <Compile Include="Services\IHomeService.cs" />
+    <Compile Include="Services\Persons\IPatientService.cs" />
+    <Compile Include="Services\Persons\IPresenterService.cs" />
+    <Compile Include="Services\Products\IProductBuyService.cs" />
+    <Compile Include="Services\Products\IProductSellerService.cs" />
+    <Compile Include="Services\Products\IProductService.cs" />
+    <Compile Include="Services\Reports\IReportService.cs" />
+    <Compile Include="Services\Reports\ReportService.cs" />
+    <Compile Include="Services\Messages\ISmsService.cs" />
+    <Compile Include="Services\Roles\IRoleService.cs" />
+    <Compile Include="Services\Roles\RoleConst.cs" />
+    <Compile Include="Services\Roles\RoleService.cs" />
+    <Compile Include="Services\Statistics\IStatisticService.cs" />
+    <Compile Include="Services\Users\IUserClaimService.cs" />
+    <Compile Include="Services\Users\IUserLoginService.cs" />
+    <Compile Include="Services\Users\IUserRoleService.cs" />
+    <Compile Include="Services\Users\IUserService.cs" />
+    <Compile Include="Services\Cookie\CookieExtention.cs" />
+    <Compile Include="Services\Cookie\CookieManager.cs" />
+    <Compile Include="Services\Cookie\ICookieManager.cs" />
+    <Compile Include="Services\File\FileConst.cs" />
+    <Compile Include="Services\File\FileManager.cs" />
+    <Compile Include="Services\File\FileModel.cs" />
+    <Compile Include="Services\File\IFileManager.cs" />
+    <Compile Include="Services\HttpContext\HttpContextManager.cs" />
+    <Compile Include="Services\HttpContext\IHttpContextManager.cs" />
+    <Compile Include="Services\Image\ImageManager.cs" />
+    <Compile Include="Services\ApplicationSignIn\ApplicationSignInManager.cs" />
+    <Compile Include="Services\ApplicationSignIn\IApplicationSignInManager.cs" />
+    <Compile Include="Services\List\IListManager.cs" />
+    <Compile Include="Services\List\ListManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Logs\ActivityLogService.cs" />
+    <Compile Include="Services\Locations\AddressService.cs" />
+    <Compile Include="Services\Logs\AuditLogService.cs" />
+    <Compile Include="Services\Common\Service.cs" />
+    <Compile Include="Services\Persons\DoctorService.cs" />
+    <Compile Include="Services\Documents\DocumentImageService.cs" />
+    <Compile Include="Services\Documents\DocumentSaleProductService.cs" />
+    <Compile Include="Services\Documents\DocumentSaleService.cs" />
+    <Compile Include="Services\Documents\DocumentService.cs" />
+    <Compile Include="Services\Messages\EmailService.cs" />
+    <Compile Include="Services\Expertises\ExpertiseService.cs" />
+    <Compile Include="Services\HomeService.cs" />
+    <Compile Include="Services\Persons\PatientService.cs" />
+    <Compile Include="Services\Persian\DigitGroup.cs" />
+    <Compile Include="Services\Persian\HumanReadableInteger.cs" />
+    <Compile Include="Services\Persian\Language.cs" />
+    <Compile Include="Services\Persian\NumberWord.cs" />
+    <Compile Include="Services\Persian\PersianExtension.cs" />
+    <Compile Include="Services\Persian\PersianProofWriter.cs" />
+    <Compile Include="Services\Persian\RemainingDateTime.cs" />
+    <Compile Include="Services\Persian\UnicodeExtensions.cs" />
+    <Compile Include="Services\Persons\PresenterService.cs" />
+    <Compile Include="Services\Products\ProductBuyService.cs" />
+    <Compile Include="Services\Products\ProductSellerService.cs" />
+    <Compile Include="Services\Products\ProductService.cs" />
+    <Compile Include="Services\Security\SecurityExtension.cs" />
+    <Compile Include="Services\Messages\SmsService.cs" />
+    <Compile Include="Services\Statistics\StatisticService.cs" />
+    <Compile Include="Services\Transaction\IRunAfterEachRequest.cs" />
+    <Compile Include="Services\Transaction\IRunAtInit.cs" />
+    <Compile Include="Services\Transaction\IRunAtStartUp.cs" />
+    <Compile Include="Services\Transaction\IRunOnEachRequest.cs" />
+    <Compile Include="Services\Transaction\IRunOnError.cs" />
+    <Compile Include="Services\Transaction\TransactionPerRequest.cs" />
+    <Compile Include="Services\Users\UserClaimService.cs" />
+    <Compile Include="Services\Users\UserLoginService.cs" />
+    <Compile Include="Services\Users\UserRoleService.cs" />
+    <Compile Include="Services\Users\UserService.cs" />
+    <Compile Include="Services\Users\Factories\ApplicationClaimsIdentityConst.cs" />
+    <Compile Include="Services\Users\Factories\ApplicationClaimsIdentityFactory.cs" />
+    <Compile Include="Services\Users\Factories\IApplicationClaimsIdentityFactory.cs" />
+    <Compile Include="Services\Session\ISessionManager.cs" />
+    <Compile Include="Services\Session\Session.cs" />
+    <Compile Include="Services\Session\SessionManager.cs" />
+    <Compile Include="Validations\AccountValidation.cs" />
+    <Compile Include="Validations\Common\BaseValidation.cs" />
+    <Compile Include="Validations\IAccountValidation.cs" />
+    <Compile Include="Validations\IPatientValidator.cs" />
+    <Compile Include="Validations\IRoleValidation.cs" />
+    <Compile Include="Validations\PatientValidator.cs" />
+    <Compile Include="Validations\RoleValidation.cs" />
+    <Compile Include="Validations\Users\ApplicationPasswordValidator.cs" />
+    <Compile Include="Validations\Users\ApplicationSecurityStampValidator.cs" />
+    <Compile Include="Validations\Users\ApplicationUserValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Clinic.Core\Clinic.Core.csproj">
+      <Project>{3dbd6af8-ba41-47c6-b01c-d48a9154171b}</Project>
+      <Name>Clinic.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Clinic.Data\Clinic.Data.csproj">
+      <Project>{5f524635-caee-4fe1-8020-011af2e7d698}</Project>
+      <Name>Clinic.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Events\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

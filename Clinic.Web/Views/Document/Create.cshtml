@@ -1,0 +1,92 @@
+﻿@model Clinic.Core.Models.Document.DocumentCreateViewModel
+@{
+    ViewBag.Title = "افزودن پرونده";
+    ViewBag.Section = "Product";
+    ViewBag.Name = "ProductNew";
+}
+<form id="newDocument" action="@Url.Action(MVC.Document.Create())" method="post">
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+            <div class="uk-form-row">
+                <div class="uk-grid" data-uk-grid-margin>
+                    
+                    <div class="uk-width-medium-1-3">
+                        <label>کد پرونده</label>
+                        <input type="text" id="CustomCode" name="CustomCode" class="md-input" data-val="true" data-val-required="شماره پرونده را وارد کنید"/>
+                    </div>
+                    
+                    <div class="uk-width-medium-1-3">
+                        <label>علت مراجعه</label>
+                        <input type="text" id="ReferralCause" name="ReferralCause" class="md-input" />
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <label>توضیحات</label>
+                        <input type="text" id="Description" name="Description" class="md-input"/>
+                    </div>
+                    
+                    <div class="uk-width-medium-1-3">
+                        <label>بیمار</label>
+                        <select id="PatientId" name="PatientId" data-on-load="prepareDocumentPatientCombobox"></select>
+                    </div>
+
+                    <div class="uk-width-medium-1-3">
+                        <label>دکتر پرونده</label>
+                        <select id="DoctorId" name="DoctorId" data-on-load="prepareDocumentDoctorCombobox"></select>
+                    </div>
+                    
+                    <div class="uk-width-medium-1-3">
+                        <label>معرف بیمار</label>
+                        <select id="PresenterId" name="PresenterId" data-on-load="prepareDocumentPresenterCombobox"></select>
+                    </div>
+                    
+                    <div class="uk-width-medium-1-3">
+                        <label>عکس های پرونده</label>
+                        @Html.Partial(MVC.Shared.Views.KendoTemplates.UploadTemplate)
+                        <input type="file" id="Images" data-on-load="prepareDocumentImageUploader" name="Images" class="md-input" />
+                    </div>
+                    
+                    <div class="uk-width-medium-1-1">
+                        <label>فاکتورهای پرونده</label>
+                        <input type="hidden" id="SalesJson" name="SalesJson"/>
+                        <div id="DocumentsSaleGridContainer" data-on-load="prepareDocumentSaleListGrid"></div>
+                        <script type="text/x-kendo-template" id="template">
+                            <div class="tabstrip">
+                                <ul>
+                                    <li class="k-state-active">
+                                       محصولات
+                                    </li>
+                                    <li>
+                                        پرداختی ها
+                                    </li>
+                                </ul>
+                                <div>
+                                    <div class="products"></div>
+                                </div>
+                                <div>
+                                    <div class='payments'>
+                                        <ul>
+                                            @*<li><label>ProductCode:</label>#= ProductCode #</li>
+                                            <li><label>ProductPrice:</label>#= ProductPrice #</li>
+                                            <li><label>ProductPrice:</label>#= Products.ProductPrice #</li>*@
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </script>
+                        <div id="dialog"></div>
+                    </div>
+
+                </div>
+                <div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-medium-1-6">
+                        <button type="submit" class="md-btn md-btn-primary waves-effect waves-button waves-light">ذخیره</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

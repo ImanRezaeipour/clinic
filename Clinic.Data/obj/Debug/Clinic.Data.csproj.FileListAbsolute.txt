@@ -1,0 +1,45 @@
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\Clinic.Data.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\Clinic.Data.pdb
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\Clinic.Core.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\EFSecondLevelCache.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\EntityFramework.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\RefactorThis.GraphDiff.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\StructureMap.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\AutoMapper.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\System.Linq.Dynamic.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\Newtonsoft.Json.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\Owin.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\bin\Debug\Clinic.Core.pdb
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\obj\Debug\Clinic.Data.csprojResolveAssemblyReference.cache
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\obj\Debug\Clinic.Data.dll
+D:\Source\Workspaces\ClinicProject\Clinic\Clinic.Data\obj\Debug\Clinic.Data.pdb
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\Clinic.Data.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\Clinic.Data.pdb
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\Clinic.Core.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\EFSecondLevelCache.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\EntityFramework.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\RefactorThis.GraphDiff.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\StructureMap.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\AutoMapper.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\System.Linq.Dynamic.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\Owin.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\Clinic.Core.pdb
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\obj\Debug\Clinic.Data.csprojResolveAssemblyReference.cache
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\obj\Debug\Clinic.Data.csproj.CoreCompileInputs.cache
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\obj\Debug\Clinic.Data.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\obj\Debug\Clinic.Data.pdb
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\System.Web.Mvc.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\System.Web.Razor.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\System.Web.WebPages.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Iman\Source\Workspaces\Clinic Project\Clinic\Clinic.Data\bin\Debug\System.Web.WebPages.Deployment.dll

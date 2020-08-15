@@ -1,0 +1,1562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A84D90A7-7989-49F8-9EBE-6B4B8792F3C2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Clinic.Web</RootNamespace>
+    <AssemblyName>Clinic.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Bundles\Scripts\Frameworks\ajax.framework.js" />
+    <Content Include="Bundles\Scripts\Frameworks\KendoFrameworks\localdatasource.kendo.js" />
+    <Content Include="Bundles\Scripts\Frameworks\KendoFrameworks\datasource.kendo.js" />
+    <Content Include="Bundles\Scripts\Frameworks\KendoFrameworks\tabstrip.kendo.js" />
+    <Content Include="Bundles\Scripts\Frameworks\KendoFrameworks\numerictextbox.kendo.js" />
+    <Content Include="Bundles\Scripts\Frameworks\KendoFrameworks\dropdownlist.kendo.js" />
+    <Content Include="Bundles\Scripts\Methods\ajax.methods.js" />
+    <Content Include="Bundles\Scripts\Methods\app.methods.js" />
+    <Content Include="Bundles\Scripts\Frameworks\kendo.frameworks.js" />
+    <Content Include="Bundles\Scripts\Frameworks\KendoFrameworks\upload.kendo.js" />
+    <Content Include="Bundles\Scripts\Frameworks\KendoFrameworks\combobox.kendo.js" />
+    <Content Include="Bundles\Scripts\Frameworks\KendoFrameworks\grid.kendo.js" />
+    <Content Include="Bundles\Scripts\Frameworks\KendoFrameworks\tree.kendo.js" />
+    <Content Include="Bundles\Scripts\Frameworks\KendoFrameworks\window.kendo.js" />
+    <Content Include="Bundles\Scripts\Frameworks\navigate.framework.js" />
+    <Content Include="Bundles\Scripts\Frameworks\parsley.configs.js" />
+    <Content Include="Bundles\Scripts\Services\Document\Create.js" />
+    <Content Include="Bundles\Scripts\Services\Document\List.js" />
+    <Content Include="Bundles\Scripts\Services\Document\_Factor.js" />
+    <Content Include="Bundles\Scripts\Services\Document\_FactorProduct.js" />
+    <Content Include="Bundles\Styles\kendo.css" />
+    <Content Include="Bundles\Styles\site.css" />
+    <Content Include="Bundles\Vendors\Altair\assets\css\codemirror_themes.min.css" />
+    <Content Include="Bundles\Vendors\Altair\assets\css\error_page.min.css" />
+    <Content Include="Bundles\Vendors\Altair\assets\css\login_page.min.css" />
+    <Content Include="Bundles\Vendors\Altair\assets\css\main.min.css" />
+    <Content Include="Bundles\Vendors\Altair\assets\css\themes\themes_combined.min.css" />
+    <Content Include="Bundles\Vendors\Altair\assets\css\uikit.rtl.css" />
+    <Content Include="Bundles\Vendors\Altair\assets\icons\flags\flags%402x.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\icons\flags\flags.min.css" />
+    <Content Include="Bundles\Vendors\Altair\assets\icons\flags\flags.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\icons\others\ic_attachment_black_18px.svg" />
+    <Content Include="Bundles\Vendors\Altair\assets\icons\others\ic_audiotrack_black_18px.svg" />
+    <Content Include="Bundles\Vendors\Altair\assets\icons\others\ic_bug_report_black_18px.svg" />
+    <Content Include="Bundles\Vendors\Altair\assets\icons\others\ic_code_black_18px.svg" />
+    <Content Include="Bundles\Vendors\Altair\assets\icons\others\ic_file_download_black_18px.svg" />
+    <Content Include="Bundles\Vendors\Altair\assets\icons\others\ic_insert_emoticon_black_18px.svg" />
+    <Content Include="Bundles\Vendors\Altair\assets\icons\others\ic_wallpaper_black_18px.svg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_01.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_01_tn.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_02.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_02_tn.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_03.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_03_tn.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_04.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_04_tn.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_05.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_05_tn.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_06.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_06_tn.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_07.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_07_tn.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_08.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_08_tn.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_09.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_09_tn.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_10.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_10_tn.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_11.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_11_tn.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_12.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\avatar_12_tn.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\user%402x.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\avatars\user.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\ecommerce\s6_edge.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\ecommerce\s6_edge_1.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\ecommerce\s6_edge_2.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\ecommerce\s6_edge_3.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\favicon-16x16.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\favicon-32x32.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image01.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image02.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image03.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image04.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image05.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image06.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image07.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image08.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image09.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image10.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image11.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image12.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image13.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image14.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image15.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image16.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image17.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image18.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image19.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image20.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image21.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image22.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image23.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\gallery\Image24.jpg" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\logo_main.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\logo_main_small.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\logo_main_white.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\others\envato_ico.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\sidebar_head_bg%402x.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\sidebar_head_bg.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\spinners\spinner.gif" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\spinners\spinner_danger.gif" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\spinners\spinner_large.gif" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\spinners\spinner_medium.gif" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\spinners\spinner_small.gif" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\spinners\spinner_success.gif" />
+    <Content Include="Bundles\Vendors\Altair\assets\img\spinners\spinner_warning.gif" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\altair_admin_common.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\common.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\custom\codemirror_fullscreen.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\custom\datatables_uikit.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\custom\dropify\dist\js\dropify.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\custom\easytree\jquery.easytree.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\custom\easytree\skin-material\icons.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\custom\easytree\skin-material\loading.gif" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\custom\easytree\skin-material\ui.easytree.min.css" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\custom\gantt_chart.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\custom\handlebars_helpers.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\custom\uikit_fileinput.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\custom\wizard_steps.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\kendoui_custom.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\components_nestable.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\components_notifications.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\components_preloaders.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\components_sortable.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\dashboard.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\ecommerce_product_edit.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\forms_advanced.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\forms_file_input.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\forms_file_upload.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\forms_validation.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\forms_wizard.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\forms_wysiwyg.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\JavaScript.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\kendoui.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\login.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\pages_issues.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\page_chat.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\page_contact_list.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\page_help.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\page_invoices.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\page_mailbox.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\page_notes.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\page_scrum_board.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\page_settings.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\page_snippets.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\page_todo.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\page_user_edit.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\plugins_charts.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\plugins_code_editor.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\plugins_crud_table.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\plugins_datatables.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\plugins_diff.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\plugins_fullcalendar.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\plugins_gantt_chart.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\plugins_google_maps.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\plugins_tablesorter.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\plugins_tree.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\pages\plugins_vector_maps.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\uikit_custom.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\js\uikit_htmleditor_custom.min.js" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\dropify\css\dropify.css" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\dropify\fonts\dropify.svg" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\jquery-ui\material\images\ui-icons_212121_256x240.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\jquery-ui\material\images\ui-icons_454545_256x240.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\jquery-ui\material\images\ui-icons_727272_256x240.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\jquery-ui\material\images\ui-icons_e53935_256x240.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\jquery-ui\material\jquery-ui.min.css" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\jtable\close.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\jtable\column-asc.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\jtable\column-desc.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\jtable\column-sortable.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\jtable\delete.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\jtable\edit.png" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\jtable\jtable.min.css" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\jtable\spinner.gif" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\c3js-chart\c3.min.css" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\c3js-chart\c3.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\chartist\dist\chartist.min.css" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\chartist\dist\chartist.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\ckeditor\adapters\jquery.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\ckeditor\ckeditor.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\clndr\src\clndr.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\codemirror\addon\edit\matchbrackets.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\codemirror\addon\edit\matchtags.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\codemirror\addon\fold\xml-fold.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\codemirror\lib\codemirror.css" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\codemirror\lib\codemirror.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\codemirror\mode\clike\clike.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\codemirror\mode\htmlmixed\htmlmixed.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\codemirror\mode\javascript\javascript.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\codemirror\mode\php\php.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\codemirror\mode\xml\xml.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\countUp.js\countUp.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\d3\d3.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\datatables-colvis\js\dataTables.colVis.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\datatables-tabletools\js\dataTables.tableTools.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\datatables\media\js\jquery.dataTables.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\dragula.js\dist\dragula.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\fitvids\jquery.fitvids.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\fullcalendar\dist\fullcalendar.min.css" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\fullcalendar\dist\fullcalendar.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\handlebars\handlebars.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\ion.rangeslider\js\ion.rangeSlider.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\jquery-mapael\js\jquery.mapael.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\jquery-mapael\js\maps\usa_states.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\jquery-mapael\js\maps\world_countries.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\jquery-ui\ui\minified\core.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\jquery-ui\ui\minified\draggable.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\jquery-ui\ui\minified\mouse.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\jquery-ui\ui\minified\resizable.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\jquery-ui\ui\minified\widget.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\jquery.easy-pie-chart\dist\jquery.easypiechart.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\jquery.inputmask\dist\jquery.inputmask.bundle.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\jsdiff\diff.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\jtable\lib\jquery.jtable.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\kendo.common-material.min.css" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\kendo.material.min.css" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\Material\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\Material\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\Material\loading-image.gif" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\Material\loading.gif" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\Material\markers.png" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\Material\markers_2x.png" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\Material\slider-h.gif" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\Material\slider-v.gif" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\Material\sprite.png" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\Material\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\Material\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\Material\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\textures\hue.png" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\textures\transparency.png" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\textures\transtexture.png" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\maplace-js\dist\maplace.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\metrics-graphics\dist\metricsgraphics.css" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\metrics-graphics\dist\metricsgraphics.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\parsleyjs\dist\parsley.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\peity\jquery.peity.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\raphael\raphael-min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\tablesorter\dist\js\extras\jquery.tablesorter.pager.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\tablesorter\dist\js\jquery.tablesorter.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\tablesorter\dist\js\jquery.tablesorter.widgets.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\tablesorter\dist\js\widgets\widget-alignChar.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\tinymce\tinymce.min.js" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\uikit\css\uikit.almost-flat.min.css" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\weather-icons\css\weather-icons.min.css" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\weather-icons\font\weathericons-regular-webfont.svg" />
+    <Content Include="Bundles\Vendors\Fonts\iransans.css" />
+    <Content Include="Bundles\Vendors\JQueryValidate\jquery.validate.js" />
+    <Content Include="Bundles\Vendors\JQueryValidate\jquery.validate.min.js" />
+    <Content Include="Bundles\Vendors\JQueryValidate\jquery.validate.unobtrusive.js" />
+    <Content Include="Bundles\Vendors\JQueryValidate\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Bundles\Vendors\JQueryWebcam\jquery.webcam.js" />
+    <Content Include="Bundles\Vendors\JQueryWebcam\jquery.webcam.min.js" />
+    <Content Include="Bundles\Vendors\JQueryWebcam\jscam.swf" />
+    <Content Include="Bundles\Vendors\JQueryWebcam\jscam_canvas_only.swf" />
+    <None Include="Bundles\Vendors\JQuery\jquery-3.1.1.intellisense.js" />
+    <Content Include="Bundles\Vendors\JQuery\jquery-3.1.1.js" />
+    <Content Include="Bundles\Vendors\JQuery\jquery-3.1.1.min.js" />
+    <Content Include="Bundles\Vendors\JQuery\jquery-3.1.1.slim.js" />
+    <Content Include="Bundles\Vendors\JQuery\jquery-3.1.1.slim.min.js" />
+    <Content Include="Bundles\Vendors\jsPersianDatePicker\Content\PersianDatePicker.css" />
+    <Content Include="Bundles\Vendors\jsPersianDatePicker\Content\PersianDatePicker.min.css" />
+    <Content Include="Bundles\Vendors\jsPersianDatePicker\Scripts\index.js" />
+    <Content Include="Bundles\Vendors\jsPersianDatePicker\Scripts\PersianDatePicker.js" />
+    <Content Include="Bundles\Vendors\jsPersianDatePicker\Scripts\PersianDatePicker.min.js" />
+    <Content Include="Bundles\Vendors\jsPersianDatePicker\test.htm" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Black\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Black\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Black\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Black\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Black\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Black\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Black\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Black\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Black\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Black\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Black\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Black\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Black\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Black\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\BlueOpal\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\BlueOpal\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\BlueOpal\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\BlueOpal\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\BlueOpal\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\BlueOpal\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\BlueOpal\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\BlueOpal\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\BlueOpal\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\BlueOpal\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\BlueOpal\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\BlueOpal\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\BlueOpal\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\BlueOpal\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Bootstrap\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Bootstrap\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Bootstrap\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Bootstrap\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Bootstrap\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Bootstrap\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Bootstrap\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Bootstrap\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Bootstrap\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Bootstrap\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Bootstrap\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Bootstrap\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Bootstrap\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Bootstrap\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Default\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Default\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Default\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Default\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Default\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Default\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Default\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Default\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Default\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Default\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Default\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Default\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Default\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Default\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Fiori\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Fiori\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Fiori\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Fiori\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Fiori\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Fiori\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Fiori\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Fiori\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Fiori\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Fiori\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Fiori\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Fiori\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Fiori\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Fiori\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Flat\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Flat\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Flat\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Flat\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Flat\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Flat\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Flat\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Flat\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Flat\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Flat\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Flat\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Flat\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Flat\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Flat\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\DejaVu\LICENSE.txt" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\glyphs\KendoUIGlyphs.svg" />
+    <Content Include="Bundles\Vendors\KendoUI\css\HighContrast\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\HighContrast\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\HighContrast\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\HighContrast\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\HighContrast\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\HighContrast\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\HighContrast\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\HighContrast\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\HighContrast\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\HighContrast\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\HighContrast\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\HighContrast\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\HighContrast\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\HighContrast\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\images\back.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\images\kendoui.svg" />
+    <Content Include="Bundles\Vendors\KendoUI\css\images\wp8_icons.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\images\wp8_inverseicons.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.black.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.black.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.blueopal.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.blueopal.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.bootstrap.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.bootstrap.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-bootstrap.core.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-bootstrap.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-fiori.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-material.core.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-material.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-nova.core.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-nova.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-office365.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common.core.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.black.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.blueopal.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.bootstrap.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.default.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.fiori.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.flat.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.highcontrast.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.material.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.materialblack.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.metro.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.metroblack.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.moonlight.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.nova.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.office365.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.silver.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.uniform.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.default.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.default.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.fiori.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.fiori.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.flat.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.flat.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.highcontrast.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.highcontrast.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.material.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.material.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.materialblack.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.materialblack.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.metro.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.metro.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.metroblack.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.metroblack.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.all.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.android.dark.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.android.light.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.blackberry.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.common.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.fiori.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.flat.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.ios.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.material.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.meego.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.nova.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.office365.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.wp8.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.moonlight.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.moonlight.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.nova.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.nova.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.office365.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.office365.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.rtl.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.silver.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.silver.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.uniform.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.uniform.mobile.min.css" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MaterialBlack\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MaterialBlack\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MaterialBlack\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MaterialBlack\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MaterialBlack\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MaterialBlack\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MaterialBlack\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MaterialBlack\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MaterialBlack\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MaterialBlack\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MaterialBlack\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MaterialBlack\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MaterialBlack\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MaterialBlack\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Material\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Material\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Material\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Material\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Material\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Material\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Material\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Material\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Material\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Material\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Material\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Material\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Material\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Material\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MetroBlack\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MetroBlack\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MetroBlack\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MetroBlack\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MetroBlack\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MetroBlack\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MetroBlack\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MetroBlack\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MetroBlack\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MetroBlack\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MetroBlack\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MetroBlack\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MetroBlack\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\MetroBlack\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Metro\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Metro\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Metro\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Metro\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Metro\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Metro\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Metro\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Metro\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Metro\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Metro\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Metro\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Metro\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Metro\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Metro\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Moonlight\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Moonlight\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Moonlight\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Moonlight\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Moonlight\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Moonlight\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Moonlight\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Moonlight\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Moonlight\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Moonlight\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Moonlight\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Moonlight\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Moonlight\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Moonlight\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Nova\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Nova\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Nova\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Nova\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Nova\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Nova\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Nova\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Nova\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Nova\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Nova\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Nova\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Nova\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Nova\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Nova\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Office365\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Office365\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Office365\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Office365\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Office365\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Office365\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Office365\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Office365\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Office365\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Office365\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Office365\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Office365\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Office365\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Office365\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Silver\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Silver\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Silver\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Silver\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Silver\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Silver\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Silver\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Silver\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Silver\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Silver\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Silver\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Silver\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Silver\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Silver\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\brushed-metal.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\dots1.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\dots10.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\dots11.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\dots12.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\dots13.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\dots2.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\dots3.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\dots4.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\dots5.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\dots6.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\dots7.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\dots8.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\dots9.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\glass-lighter.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\glass.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\highlight.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\hsv-gradient.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\hue.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\leather1.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\leather2.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\noise.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\stripe1.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\stripe2.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\stripe3.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\stripe4.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\stripe5.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\stripe6.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\transparency.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\textures\transtexture.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Uniform\editor.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Uniform\imagebrowser.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Uniform\indeterminate.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Uniform\loading-image.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Uniform\loading.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Uniform\loading_2x.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Uniform\markers.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Uniform\markers_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Uniform\slider-h.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Uniform\slider-v.gif" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Uniform\sprite.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Uniform\sprite_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Uniform\sprite_kpi.png" />
+    <Content Include="Bundles\Vendors\KendoUI\css\Uniform\sprite_kpi_2x.png" />
+    <Content Include="Bundles\Vendors\KendoUI\js\angular.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\cultures\kendo.culture.en-US.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\cultures\kendo.culture.en.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\cultures\kendo.culture.fa-IR.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\cultures\kendo.culture.fa.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\jquery.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\jszip.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.all.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.angular.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.angular2.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.aspnetmvc.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.autocomplete.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.binder.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.button.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.calendar.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.color.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.colorpicker.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.columnmenu.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.columnsorter.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.combobox.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.core.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.data.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.data.odata.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.data.signalr.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.data.xml.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.barcode.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.chart.funnel.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.chart.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.chart.polar.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.core.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.diagram.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.gauge.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.map.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.mobile.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.qrcode.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.sparkline.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.stock.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.themes.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.treemap.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.datepicker.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.datetimepicker.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dialog.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dom.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.draganddrop.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.drawing.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dropdownlist.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.editable.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.editor.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.excel.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.filebrowser.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.filtercell.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.filtermenu.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.fx.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.gantt.list.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.gantt.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.gantt.timeline.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.grid.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.groupable.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.imagebrowser.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.list.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.listview.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.maskedtextbox.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mediaplayer.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.menu.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.actionsheet.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.application.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.button.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.buttongroup.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.collapsible.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.drawer.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.listview.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.loader.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.modalview.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.navbar.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.pane.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.popover.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.scroller.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.scrollview.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.shim.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.splitview.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.switch.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.tabstrip.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.view.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.multiselect.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.notification.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.numerictextbox.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.ooxml.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.pager.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.panelbar.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.pdf.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.pivot.configurator.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.pivot.fieldmenu.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.pivotgrid.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.popup.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.progressbar.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.reorderable.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.resizable.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.responsivepanel.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.router.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.scheduler.agendaview.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.scheduler.dayview.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.scheduler.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.scheduler.monthview.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.scheduler.recurrence.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.scheduler.timelineview.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.scheduler.view.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.selectable.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.slider.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.sortable.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.splitter.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.spreadsheet.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.tabstrip.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.timepicker.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.timezones.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.toolbar.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.tooltip.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.touch.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.treelist.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.treeview.draganddrop.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.treeview.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.upload.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.userevents.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.validator.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.view.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.virtuallist.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.web.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.webcomponents.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.window.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\messages\kendo.messages.en-US.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\messages\kendo.messages.fa-IR.min.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\messages\sample.js" />
+    <Content Include="Bundles\Vendors\KendoUI\js\pako_deflate.min.js" />
+    <Content Include="Bundles\Vendors\Parsley\i18n\en.extra.js" />
+    <Content Include="Bundles\Vendors\Parsley\i18n\en.js" />
+    <Content Include="Bundles\Vendors\Parsley\i18n\fa.js" />
+    <Content Include="Bundles\Vendors\Parsley\parsley.js" />
+    <Content Include="Bundles\Vendors\Parsley\parsley.min.js" />
+    <Content Include="Bundles\Vendors\Toastr\toastr.css" />
+    <Content Include="Bundles\Vendors\Toastr\toastr.min.css" />
+    <Content Include="Bundles\Vendors\Toastr\toastr.min.js" />
+    <Content Include="Bundles\Vendors\TrackingJS\data\eye-min.js" />
+    <Content Include="Bundles\Vendors\TrackingJS\data\eye.js" />
+    <Content Include="Bundles\Vendors\TrackingJS\data\face-min.js" />
+    <Content Include="Bundles\Vendors\TrackingJS\data\face.js" />
+    <Content Include="Bundles\Vendors\TrackingJS\data\mouth-min.js" />
+    <Content Include="Bundles\Vendors\TrackingJS\data\mouth.js" />
+    <Content Include="Bundles\Vendors\TrackingJS\tracking-min.js" />
+    <Content Include="Bundles\Vendors\TrackingJS\tracking.js" />
+    <Content Include="Files\Localization\ar.xml" />
+    <Content Include="Files\Localization\be.xml" />
+    <Content Include="Files\Localization\bg.xml" />
+    <Content Include="Files\Localization\ca-ES.xml" />
+    <Content Include="Files\Localization\cs.xml" />
+    <Content Include="Files\Localization\de.ext.xml" />
+    <Content Include="Files\Localization\de.xml" />
+    <Content Include="Files\Localization\el-GR.xml" />
+    <Content Include="Files\Localization\en-GB.xml" />
+    <Content Include="Files\Localization\en.ext.xml" />
+    <Content Include="Files\Localization\en.xml" />
+    <Content Include="Files\Localization\es.xml" />
+    <Content Include="Files\Localization\eu-ES.xml" />
+    <Content Include="Files\Localization\fa.xml" />
+    <Content Include="Files\Localization\fr.ext.xml" />
+    <Content Include="Files\Localization\fr.xml" />
+    <Content Include="Files\Localization\gl-ES.xml" />
+    <Content Include="Files\Localization\hr.xml" />
+    <Content Include="Files\Localization\hu.xml" />
+    <Content Include="Files\Localization\id.xml" />
+    <Content Include="Files\Localization\it.xml" />
+    <Content Include="Files\Localization\ka.xml" />
+    <Content Include="Files\Localization\Lt-sr-SP.xml" />
+    <Content Include="Files\Localization\lt.xml" />
+    <Content Include="Files\Localization\nb-NO.xml" />
+    <Content Include="Files\Localization\nl.xml" />
+    <Content Include="Files\Localization\pl.xml" />
+    <Content Include="Files\Localization\pt-BR.xml" />
+    <Content Include="Files\Localization\pt.xml" />
+    <Content Include="Files\Localization\ro.xml" />
+    <Content Include="Files\Localization\ru.ext.xml" />
+    <Content Include="Files\Localization\ru.xml" />
+    <Content Include="Files\Localization\sk.xml" />
+    <Content Include="Files\Localization\sv.ext.xml" />
+    <Content Include="Files\Localization\sv.xml" />
+    <Content Include="Files\Localization\tr.xml" />
+    <Content Include="Files\Localization\uk.xml" />
+    <Content Include="Files\Localization\zh-CHS.xml" />
+    <Content Include="Files\Localization\zh-CHT.xml" />
+    <Content Include="Global.asax" />
+    <Content Include="Bundles\Scripts\Services\account.service.js" />
+    <Content Include="Bundles\Scripts\Services\base.service.js" />
+    <Content Include="Bundles\Scripts\Services\doctor.service.js" />
+    <Content Include="Bundles\Scripts\Services\document.service.js" />
+    <Content Include="Bundles\Scripts\Services\error.service.js" />
+    <Content Include="Bundles\Scripts\Services\file.service.js" />
+    <Content Include="Bundles\Scripts\Services\home.service.js" />
+    <Content Include="Bundles\Scripts\Services\page.service.js" />
+    <Content Include="Bundles\Scripts\Services\report.service.js" />
+    <Content Include="Bundles\Scripts\Services\patient.service.js" />
+    <Content Include="Bundles\Scripts\Services\presenter.service.js" />
+    <Content Include="Bundles\Scripts\Services\product.service.js" />
+    <Content Include="Bundles\Scripts\Services\productBuy.service.js" />
+    <Content Include="Bundles\Scripts\Services\productSeller.service.js" />
+    <Content Include="Bundles\Scripts\Services\role.service.js" />
+    <Content Include="Bundles\Scripts\Services\service.js" />
+    <Content Include="Bundles\Scripts\Services\user.service.js" />
+    <Content Include="T4MVC.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>T4MVC.cs</LastGenOutput>
+    </Content>
+    <Content Include="Files\Report.mrt" />
+    <None Include="T4MVC.tt.settings.xml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Doctor\Create.cshtml" />
+    <Content Include="Views\Doctor\Edit.cshtml" />
+    <Content Include="Views\Doctor\List.cshtml" />
+    <Content Include="Views\Document\Create.cshtml" />
+    <Content Include="Views\Document\Edit.cshtml" />
+    <Content Include="Views\Document\List.cshtml" />
+    <Content Include="Views\Error\BadRequest.cshtml" />
+    <Content Include="Views\Error\Forbidden.cshtml" />
+    <Content Include="Views\Error\InternalServerError.cshtml" />
+    <Content Include="Views\Error\MethodNotAllowed.cshtml" />
+    <Content Include="Views\Error\NotFound.cshtml" />
+    <Content Include="Views\Error\Unauthorized.cshtml" />
+    <Content Include="Views\Home\Dashboard.cshtml" />
+    <Content Include="Views\Patient\Create.cshtml" />
+    <Content Include="Views\Patient\Edit.cshtml" />
+    <Content Include="Views\Patient\List.cshtml" />
+    <Content Include="Views\Presenter\Create.cshtml" />
+    <Content Include="Views\Presenter\Edit.cshtml" />
+    <Content Include="Views\Presenter\List.cshtml" />
+    <Content Include="Views\ProductBuy\Create.cshtml" />
+    <Content Include="Views\ProductBuy\Edit.cshtml" />
+    <Content Include="Views\ProductBuy\List.cshtml" />
+    <Content Include="Views\ProductSeller\Create.cshtml" />
+    <Content Include="Views\ProductSeller\Edit.cshtml" />
+    <Content Include="Views\ProductSeller\List.cshtml" />
+    <Content Include="Views\Product\Create.cshtml" />
+    <Content Include="Views\Product\Edit.cshtml" />
+    <Content Include="Views\Product\List.cshtml" />
+    <Content Include="Views\Role\Create.cshtml" />
+    <Content Include="Views\Role\Edit.cshtml" />
+    <Content Include="Views\Role\List.cshtml" />
+    <Content Include="Views\Shared\CheckBoxListBuilder.cshtml" />
+    <Content Include="Views\Shared\DatePickerInitial.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\CanonicalHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\MenuHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\MetaRobotsHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapNodeModelList.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapPath.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapPathHelperModel.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\SiteMapTitleHelperModel.cshtml" />
+    <Content Include="Views\Shared\MasterTemplates\_Layout.cshtml" />
+    <Content Include="Views\Shared\MasterTemplates\_MainHeader.cshtml" />
+    <Content Include="Views\Shared\MasterTemplates\_MainSideBar.cshtml" />
+    <Content Include="Views\Shared\ToastrBuilder.cshtml" />
+    <Content Include="Views\Shared\_Toastr.cshtml" />
+    <Content Include="Views\Statistic\List.cshtml" />
+    <Content Include="Views\User\ChangePassword.cshtml" />
+    <Content Include="Views\User\Edit.cshtml" />
+    <Content Include="Views\User\List.cshtml" />
+    <Content Include="Views\web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="T4MVC.tt.hooks.t4" />
+    <Content Include="Views\Report\Detail.cshtml" />
+    <Content Include="Views\Report\Create.cshtml" />
+    <Content Include="Views\Report\Edit.cshtml" />
+    <Content Include="Views\Report\List.cshtml" />
+    <Content Include="Views\Shared\KendoTemplates\UploadTemplate.cshtml" />
+    <Content Include="Views\Document\_Factor.cshtml" />
+    <Content Include="Views\Report\_Empty.cshtml" />
+    <Content Include="Views\Report\_FromDateToDate.cshtml" />
+    <Content Include="Views\Report\_ToDate.cshtml" />
+    <Content Include="Views\Document\_FactorProduct.cshtml" />
+    <Content Include="Views\Document\_FactorPayment.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ActivityLogController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AddressController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AuditLogController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BaseController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ActivityLogController.cs" />
+    <Compile Include="Controllers\AddressController.cs" />
+    <Compile Include="Controllers\AuditLogController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\DoctorController.cs" />
+    <Compile Include="Controllers\DocumentController.cs" />
+    <Compile Include="Controllers\EmailController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\ExpertiseController.cs" />
+    <Compile Include="Controllers\FileController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PatientController.cs" />
+    <Compile Include="Controllers\PresenterController.cs" />
+    <Compile Include="Controllers\ProductBuyController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ProductSellerController.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
+    <Compile Include="Controllers\RoleController.cs" />
+    <Compile Include="Controllers\SmsController.cs" />
+    <Compile Include="Controllers\StatisticController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="DoctorController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmailController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ExpertiseController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FileController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomeController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PatientController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PresenterController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductBuyController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProductSellerController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RoleController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SharedController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SmsController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T4MVC.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\DisplayTemplates\SiteMapPath.generated.cs" />
+    <Compile Include="Views\Shared\ToastrBuilder.generated.cs" />
+    <Compile Include="Views\Shared\_Toastr.generated.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bundles\Vendors\Altair\assets\icons\material-design-icons\MaterialIcons-Regular.eot" />
+    <Content Include="Bundles\Vendors\Altair\assets\icons\material-design-icons\MaterialIcons-Regular.ttf" />
+    <Content Include="Bundles\Vendors\Altair\assets\icons\material-design-icons\MaterialIcons-Regular.woff" />
+    <Content Include="Bundles\Vendors\Altair\assets\icons\material-design-icons\MaterialIcons-Regular.woff2" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\dropify\fonts\dropify.eot" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\dropify\fonts\dropify.ttf" />
+    <Content Include="Bundles\Vendors\Altair\assets\skins\dropify\fonts\dropify.woff" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\DejaVu\DejaVuSans-Bold.ttf_v=1.1" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\DejaVu\DejaVuSans-BoldOblique.ttf_v=1.1" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\DejaVu\DejaVuSans-Oblique.ttf_v=1.1" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\DejaVu\DejaVuSans.ttf_v=1.1" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\DejaVu\DejaVuSansMono-Bold.ttf_v=1.1" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\DejaVu\DejaVuSansMono-BoldOblique.ttf_v=1.1" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\DejaVu\DejaVuSansMono-Oblique.ttf_v=1.1" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\DejaVu\DejaVuSansMono.ttf_v=1.1" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\DejaVu\DejaVuSerif-Bold.ttf_v=1.1" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\DejaVu\DejaVuSerif-BoldItalic.ttf_v=1.1" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\DejaVu\DejaVuSerif-Italic.ttf_v=1.1" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\DejaVu\DejaVuSerif.ttf_v=1.1" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\glyphs\KendoUIGlyphs.eot_y6oa7j" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\glyphs\KendoUIGlyphs.eot_y6oa7j_" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\glyphs\KendoUIGlyphs.svg_y6oa7j" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\glyphs\KendoUIGlyphs.ttf_y6oa7j" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\kendo-ui\styles\fonts\glyphs\KendoUIGlyphs.woff_y6oa7j" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\uikit\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\uikit\fonts\fontawesome-webfont.woff" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\uikit\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\weather-icons\font\weathericons-regular-webfont.eot" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\weather-icons\font\weathericons-regular-webfont.eot_" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\weather-icons\font\weathericons-regular-webfont.ttf" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\weather-icons\font\weathericons-regular-webfont.woff" />
+    <Content Include="Bundles\Vendors\Altair\bower_components\weather-icons\font\weathericons-regular-webfont.woff2" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-Bold-web.eot" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-Bold-web.ttf" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-Bold-web.woff" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-Bold-web.woff2" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-Light-web.eot" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-Light-web.ttf" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-Light-web.woff" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-Light-web.woff2" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-Medium-web.eot" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-Medium-web.ttf" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-Medium-web.woff" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-Medium-web.woff2" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-UltraLight-web.eot" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-UltraLight-web.ttf" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-UltraLight-web.woff" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-UltraLight-web.woff2" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-web.eot" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-web.ttf" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-web.woff" />
+    <Content Include="Bundles\Vendors\Fonts\IranSans\IRANSans-web.woff2" />
+    <Content Include="Bundles\Vendors\JQuery\jquery-3.1.1.min.map" />
+    <Content Include="Bundles\Vendors\JQuery\jquery-3.1.1.slim.min.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\DejaVu\DejaVuSans-Bold.ttf" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\DejaVu\DejaVuSans-BoldOblique.ttf" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\DejaVu\DejaVuSans-ExtraLight.ttf" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\DejaVu\DejaVuSans-Oblique.ttf" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\DejaVu\DejaVuSans.ttf" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\DejaVu\DejaVuSansMono-Bold.ttf" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\DejaVu\DejaVuSansMono-BoldOblique.ttf" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\DejaVu\DejaVuSansMono-Oblique.ttf" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\DejaVu\DejaVuSansMono.ttf" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\DejaVu\DejaVuSerif-Bold.ttf" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\DejaVu\DejaVuSerif-BoldItalic.ttf" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\DejaVu\DejaVuSerif-Italic.ttf" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\DejaVu\DejaVuSerif.ttf" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\glyphs\KendoUIGlyphs.eot" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\glyphs\KendoUIGlyphs.ttf" />
+    <Content Include="Bundles\Vendors\KendoUI\css\fonts\glyphs\KendoUIGlyphs.woff" />
+    <Content Include="Bundles\Vendors\KendoUI\css\images\kendoui.ttf" />
+    <Content Include="Bundles\Vendors\KendoUI\css\images\kendoui.woff" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.black.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.black.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.blueopal.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.blueopal.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.bootstrap.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.bootstrap.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-bootstrap.core.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-bootstrap.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-fiori.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-material.core.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-material.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-nova.core.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-nova.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common-office365.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common.core.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.common.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.black.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.blueopal.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.bootstrap.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.default.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.fiori.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.flat.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.highcontrast.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.material.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.materialblack.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.metro.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.metroblack.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.moonlight.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.nova.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.office365.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.silver.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.dataviz.uniform.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.default.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.default.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.fiori.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.fiori.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.flat.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.flat.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.highcontrast.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.highcontrast.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.material.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.material.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.materialblack.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.materialblack.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.metro.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.metro.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.metroblack.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.metroblack.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.all.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.android.dark.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.android.light.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.blackberry.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.common.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.fiori.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.flat.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.ios.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.material.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.meego.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.nova.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.office365.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.mobile.wp8.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.moonlight.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.moonlight.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.nova.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.nova.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.office365.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.office365.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.rtl.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.silver.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.silver.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.uniform.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\css\kendo.uniform.mobile.min.css.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\cultures\kendo.culture.en-US.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\cultures\kendo.culture.en.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\cultures\kendo.culture.fa-IR.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\cultures\kendo.culture.fa.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\jquery.min.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.all.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.angular.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.angular2.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.aspnetmvc.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.autocomplete.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.binder.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.button.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.calendar.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.color.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.colorpicker.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.columnmenu.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.columnsorter.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.combobox.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.core.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.data.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.data.odata.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.data.signalr.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.data.xml.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.barcode.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.chart.funnel.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.chart.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.chart.polar.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.core.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.diagram.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.gauge.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.map.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.mobile.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.qrcode.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.sparkline.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.stock.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.themes.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dataviz.treemap.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.datepicker.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.datetimepicker.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dialog.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dom.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.draganddrop.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.drawing.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.dropdownlist.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.editable.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.editor.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.excel.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.filebrowser.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.filtercell.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.filtermenu.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.fx.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.gantt.list.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.gantt.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.gantt.timeline.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.grid.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.groupable.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.imagebrowser.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.list.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.listview.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.maskedtextbox.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mediaplayer.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.menu.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.actionsheet.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.application.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.button.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.buttongroup.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.collapsible.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.drawer.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.listview.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.loader.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.modalview.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.navbar.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.pane.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.popover.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.scroller.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.scrollview.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.shim.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.splitview.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.switch.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.tabstrip.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.mobile.view.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.multiselect.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.notification.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.numerictextbox.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.ooxml.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.pager.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.panelbar.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.pdf.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.pivot.configurator.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.pivot.fieldmenu.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.pivotgrid.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.popup.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.progressbar.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.reorderable.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.resizable.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.responsivepanel.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.router.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.scheduler.agendaview.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.scheduler.dayview.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.scheduler.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.scheduler.monthview.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.scheduler.recurrence.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.scheduler.timelineview.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.scheduler.view.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.selectable.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.slider.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.sortable.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.splitter.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.spreadsheet.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.tabstrip.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.timepicker.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.timezones.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.toolbar.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.tooltip.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.touch.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.treelist.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.treeview.draganddrop.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.treeview.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.upload.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.userevents.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.validator.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.view.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.virtuallist.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.web.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.webcomponents.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\kendo.window.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\messages\kendo.messages.en-US.min.js.map" />
+    <Content Include="Bundles\Vendors\KendoUI\js\messages\kendo.messages.fa-IR.min.js.map" />
+    <Content Include="Bundles\Vendors\Parsley\parsley.js.map" />
+    <Content Include="Bundles\Vendors\Parsley\parsley.min.js.map" />
+    <Content Include="Bundles\Vendors\Toastr\toastr.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bundles\Scripts\Builders\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper, Version=6.0.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="CaptchaMvc, Version=2.5.0.0, Culture=neutral, PublicKeyToken=fe46ad421dd3b0e6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\CaptchaMvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah, Version=1.2.14706.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Kendo.Mvc, Version=2016.3.1118.545, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\Kendo.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\DependentDLL\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DependentDLL\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.RedisOutputCacheProvider">
+      <HintPath>..\DependentDLL\Microsoft.Web.RedisOutputCacheProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcCheckBoxList">
+      <HintPath>..\DependentDLL\MvcCheckBoxList.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcSiteMapProvider">
+      <HintPath>..\DependentDLL\MvcSiteMapProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcSiteMapProvider.WebActivator">
+      <HintPath>..\DependentDLL\MvcSiteMapProvider.WebActivator.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\DependentDLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\DependentDLL\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="PersianDateTime">
+      <HintPath>..\DependentDLL\PersianDateTime.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorGenerator.Mvc">
+      <HintPath>..\DependentDLL\RazorGenerator.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="RefactorThis.GraphDiff">
+      <HintPath>..\DependentDLL\RefactorThis.GraphDiff.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis">
+      <HintPath>..\DependentDLL\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base">
+      <HintPath>..\DependentDLL\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report">
+      <HintPath>..\DependentDLL\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Mvc">
+      <HintPath>..\DependentDLL\Stimulsoft.Report.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Web">
+      <HintPath>..\DependentDLL\Stimulsoft.Report.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\DependentDLL\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap.Web">
+      <HintPath>..\DependentDLL\StructureMap.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Common">
+      <HintPath>..\DependentDLL\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\DependentDLL\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6">
+      <HintPath>..\DependentDLL\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq">
+      <HintPath>..\DependentDLL\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>..\DependentDLL\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\DependentDLL\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\DependentDLL\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\DependentDLL\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\DependentDLL\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="T4MVCExtensions">
+      <HintPath>..\DependentDLL\T4MVCExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx">
+      <HintPath>..\DependentDLL\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <HintPath>..\DependentDLL\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Clinic.Core\Clinic.Core.csproj">
+      <Project>{3dbd6af8-ba41-47c6-b01c-d48a9154171b}</Project>
+      <Name>Clinic.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Clinic.Data\Clinic.Data.csproj">
+      <Project>{5f524635-caee-4fe1-8020-011af2e7d698}</Project>
+      <Name>Clinic.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Clinic.Service\Clinic.Service.csproj">
+      <Project>{ddacf646-5e51-482f-9e65-307d78ec7b1c}</Project>
+      <Name>Clinic.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Clinic.Web.Framework\Clinic.Web.Framework.csproj">
+      <Project>{32eb0fd7-ff89-4ef8-a507-40c8da9fa553}</Project>
+      <Name>Clinic.Web.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10500</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:10426/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

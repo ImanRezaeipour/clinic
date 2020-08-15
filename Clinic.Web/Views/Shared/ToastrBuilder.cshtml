@@ -1,0 +1,29 @@
+﻿@* Generator: MvcHelper GeneratePrettyNames: true *@
+@*
+    The messages are being displayed using JavaScript calls. The important thing here is that we make these calls after the Toastr JavaScript library has been loaded. To transform the server side message objects into JavaScript calls we can create a simple HTML helper.
+*@
+@using Clinic.FrameWork.Toast
+@helper ShowToastMessages(Toastr toastr)
+{
+    if (toastr != null)
+    {
+        <script>
+            $(document).ready(function () {
+                toastr.options.closeButton = '@toastr.ShowCloseButton';
+                toastr.options.newestOnTop = '@toastr.ShowNewestOnTop';
+
+                @foreach (ToastMessage message in toastr.ToastMessages)
+                {
+                    string toastTypeValue = message.ToastType.ToString("F").ToLower();
+                    @: var optionsOverride = { /* Add message specific options here */ "positionClass": "toast-top-center", "closeButton": false, "progressBar": true };
+                    if (message.IsSticky)
+                    {
+                        @:optionsOverride.timeOut = 5000; 
+                        @:optionsOverride.extendedTimeout = 1000;
+                    }
+                    @:toastr['@toastTypeValue']('@message.Message', '@message.Title', optionsOverride);
+                }
+            });
+        </script>
+    }
+}
